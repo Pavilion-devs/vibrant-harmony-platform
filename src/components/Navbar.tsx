@@ -154,7 +154,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "fixed inset-0 top-[60px] bg-white z-50 transition-transform duration-300 ease-in-out md:hidden overflow-auto",
+            "fixed inset-0 top-[60px] bg-white z-50 transition-transform duration-300 ease-in-out md:hidden overflow-y-auto max-h-[calc(100vh-60px)]",
             isOpen ? "translate-x-0" : "translate-x-full"
           )}
         >
