@@ -22,6 +22,19 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Effect to prevent body scrolling when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
@@ -141,7 +154,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "fixed inset-0 top-[60px] bg-white z-50 transition-transform duration-300 ease-in-out md:hidden",
+            "fixed inset-0 top-[60px] bg-white z-50 transition-transform duration-300 ease-in-out md:hidden overflow-auto",
             isOpen ? "translate-x-0" : "translate-x-full"
           )}
         >
