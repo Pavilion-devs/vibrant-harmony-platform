@@ -17,7 +17,7 @@ const products: Product[] = [
   {
     id: 1,
     name: "Premium Basmati Rice",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e8ac?auto=format&fit=crop&q=80&w=600",
+    image: "/lovable-uploads/2ac829f9-3973-4917-827b-40376f7cdc46.png",
     description: "Our signature long-grain basmati rice is sourced from the finest rice fields and processed to maintain optimal nutrition and flavor.",
     features: [
       "Long grain variety",
@@ -29,7 +29,7 @@ const products: Product[] = [
   {
     id: 2,
     name: "Organic Tomato Paste",
-    image: "https://images.unsplash.com/photo-1608500219063-e5154ff20ced?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1576181256399-834e3b3a49bf?auto=format&fit=crop&q=80&w=600",
     description: "Made from vine-ripened tomatoes, our organic tomato paste delivers rich flavor and vibrant color to enhance your cooking.",
     features: [
       "100% organic ingredients",

@@ -13,25 +13,25 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?auto=format&fit=crop&q=80&w=1920",
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e8ac?auto=format&fit=crop&q=80&w=1920",
     title: "Empowering Lives Through Quality",
     subtitle: "Delivering excellence across Foods, Electronics, and Real Estate",
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1519638399535-1b036603ac77?auto=format&fit=crop&q=80&w=1920",
+    image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&q=80&w=1920",
     title: "Food Products That Nourish",
     subtitle: "High-quality staples for homes across Africa",
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&q=80&w=1920",
+    image: "https://images.unsplash.com/photo-1615224299941-04a854c101d4?auto=format&fit=crop&q=80&w=1920",
     title: "Smart Electronics for Modern Living",
     subtitle: "Innovative technology solutions for homes and businesses",
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1920",
+    image: "https://images.unsplash.com/photo-1627844718626-4c6b963deaf1?auto=format&fit=crop&q=80&w=1920",
     title: "Building Tomorrow's Communities",
     subtitle: "Sustainable real estate developments for a better future",
   },

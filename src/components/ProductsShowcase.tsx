@@ -16,7 +16,7 @@ const products: Product[] = [
   {
     id: 1,
     name: "Premium Basmati Rice",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e8ac?auto=format&fit=crop&q=80&w=600",
+    image: "/lovable-uploads/2ac829f9-3973-4917-827b-40376f7cdc46.png",
     category: "food",
     description: "High-quality long grain rice, perfect for any meal.",
     link: "/products#rice",
@@ -24,7 +24,7 @@ const products: Product[] = [
   {
     id: 2,
     name: "Organic Tomato Paste",
-    image: "https://images.unsplash.com/photo-1608500219063-e5154ff20ced?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1576181256399-834e3b3a49bf?auto=format&fit=crop&q=80&w=600",
     category: "food",
     description: "100% organic tomato paste with no additives or preservatives.",
     link: "/products#tomato",
@@ -32,7 +32,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Smart Home System",
-    image: "https://images.unsplash.com/photo-1558002038-1055e2e94a17?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&q=80&w=600",
     category: "electronics",
     description: "Integrated home automation for modern living.",
     link: "/products#smarthome",
@@ -40,7 +40,7 @@ const products: Product[] = [
   {
     id: 4,
     name: "Energy Efficient Refrigerator",
-    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1626250788942-c5cca0769885?auto=format&fit=crop&q=80&w=600",
     category: "electronics",
     description: "Cutting-edge cooling technology with minimal energy consumption.",
     link: "/products#refrigerator",
