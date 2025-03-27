@@ -64,49 +64,52 @@ const HeroCarousel = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={cn(
-            "absolute inset-0 transition-opacity duration-1000 ease-in-out",
-            currentSlide === index ? "opacity-100" : "opacity-0"
-          )}
-        >
+  {slides.map((slide, index) => (
+    <div
+      key={slide.id}
+      className={cn(
+        "absolute inset-0 transition-opacity duration-1000 ease-in-out",
+        currentSlide === index ? "opacity-100" : "opacity-0"
+      )}
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${slide.image})`,
+          transform: currentSlide === index ? "scale(1.05)" : "scale(1)",
+          transition: "transform 10s ease-out",
+        }}
+      />
+      <div className="absolute inset-0 bg-vara-primary/30 pointer-events-none" />
+      
+      <div className="absolute inset-0 flex items-center justify-center z-10">
+        <div className="container mx-auto px-6 md:px-12 text-center">
           <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url(${slide.image})`,
-              transform: currentSlide === index ? "scale(1.05)" : "scale(1)",
-              transition: "transform 10s ease-out",
-            }}
-          />
-          <div className="absolute inset-0 bg-vara-primary/30" />
-          
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container mx-auto px-6 md:px-12 text-center">
-              <div className={cn(
-                "transition-all duration-1000",
-                currentSlide === index ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"
-              )}>
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 max-w-5xl mx-auto leading-tight">
-                  {slide.title}
-                </h1>
-                <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
-                  {slide.subtitle}
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <a href="#industries" className="vara-btn-primary">
-                    Explore Our Industries
-                  </a>
-                  <a href="/contact" className="vara-btn-secondary bg-white/10 text-white border-white/40 hover:bg-white/20">
-                    Partner With Us
-                  </a>
-                </div>
-              </div>
+            className={cn(
+              "transition-all duration-1000",
+              currentSlide === index ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"
+            )}
+          >
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 max-w-5xl mx-auto leading-tight">
+              {slide.title}
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
+              {slide.subtitle}
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a href="/industries" className="vara-btn-primary relative">
+                Explore Our Industries
+              </a>
+              <a href="/contact" className="vara-btn-secondary bg-white/10 text-white border-white/40 hover:bg-white/20 relative">
+                Partner With Us
+              </a>
             </div>
           </div>
         </div>
-      ))}
+      </div>
+    </div>
+  ))}
+  {/* Rest of the code (arrows and pagination dots) remains unchanged */}
 
       <button
         onClick={prevSlide}
