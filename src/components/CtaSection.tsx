@@ -16,7 +16,7 @@ const CtaSection = () => {
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
-            Ready to Partner with Vara Group?
+            Ready to Partner with Vara Global Trading?
           </h2>
           <p className="text-xl text-white/90 mb-10 max-w-3xl mx-auto">
             Join us in our mission to deliver quality products and services that improve lives across Africa. Let's create something exceptional together.

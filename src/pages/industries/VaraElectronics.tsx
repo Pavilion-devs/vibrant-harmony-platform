@@ -17,7 +17,7 @@ const products: Product[] = [
   {
     id: 1,
     name: "Smart Home System",
-    image: "https://images.unsplash.com/photo-1558002038-1055e2e94a17?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Our comprehensive smart home system integrates lighting, security, climate control, and entertainment for seamless home automation.",
     features: [
       "Voice control compatibility",
@@ -41,7 +41,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Air Purification System",
-    image: "https://images.unsplash.com/photo-1527186504227-0a47655f8cae?auto=format&fit=crop&q=80&w=600",
+    image: "https://assets.grok.com/users/e07946c4-8876-4267-847e-4441f07e6bea/generated/WtV3WdTIjfZi7dmo/image.jpg",
     description: "Create a healthier living environment with our advanced air purification systems that remove pollutants, allergens, and odors.",
     features: [
       "HEPA filtration",

@@ -15,8 +15,8 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "Premium Basmati Rice",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e8ac?auto=format&fit=crop&q=80&w=600",
+    name: "Cinnamon Spice",
+    image: "/spice.png",
     category: "food",
     description: "High-quality long grain rice, perfect for any meal.",
     link: "/products#rice",
@@ -24,15 +24,15 @@ const products: Product[] = [
   {
     id: 2,
     name: "Organic Tomato Paste",
-    image: "https://images.unsplash.com/photo-1608500219063-e5154ff20ced?auto=format&fit=crop&q=80&w=600",
+    image: "/paste.png",
     category: "food",
     description: "100% organic tomato paste with no additives or preservatives.",
     link: "/products#tomato",
   },
   {
     id: 3,
-    name: "Smart Home System",
-    image: "https://images.unsplash.com/photo-1558002038-1055e2e94a17?auto=format&fit=crop&q=80&w=600",
+    name: "Vegetable Oil",
+    image: "/oil.png",
     category: "electronics",
     description: "Integrated home automation for modern living.",
     link: "/products#smarthome",

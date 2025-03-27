@@ -11,7 +11,7 @@ const MissionSection = () => {
               Our Mission & Values
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              At Vara Group, we are committed to enriching lives through innovation and quality across all our business sectors. Our goal is to create products and services that address the fundamental needs of communities while maintaining the highest standards of excellence.
+              At Vara Global Trading, we are committed to enriching lives through innovation and quality across all our business sectors. Our goal is to create products and services that address the fundamental needs of communities while maintaining the highest standards of excellence.
             </p>
             <div className="space-y-4 mb-8">
               <div className="flex items-start">

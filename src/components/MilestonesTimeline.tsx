@@ -11,7 +11,7 @@ const milestones: Milestone[] = [
     id: 1,
     year: "2005",
     title: "Company Founded",
-    description: "Vara Group established with a focus on food distribution."
+    description: "Vara Global Trading established with a focus on food distribution."
   },
   {
     id: 2,

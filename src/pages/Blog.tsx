@@ -30,7 +30,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 2,
-    title: "Vara Group Expands Electronic Manufacturing Facilities",
+    title: "Vara Global Trading Expands Electronic Manufacturing Facilities",
     excerpt: "Announcing our new state-of-the-art production facility that will increase capacity and create jobs in the region.",
     image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=600",
     date: "April 28, 2023",

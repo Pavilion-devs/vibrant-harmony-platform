@@ -100,7 +100,7 @@ const Careers = () => {
     <Layout>
       <PageHeader
         title="Join Our Team"
-        subtitle="Discover career opportunities across the Vara Group family of companies"
+        subtitle="Discover career opportunities across the Vara Global Trading family of companies"
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1920"
       />
 
@@ -112,10 +112,10 @@ const Careers = () => {
                 Work With Purpose
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                At Vara Group, we believe that our success is built on the talents, dedication, and innovation of our diverse team. We're committed to creating an inclusive workplace where employees can grow, contribute, and thrive.
+                At Vara Global Trading, we believe that our success is built on the talents, dedication, and innovation of our diverse team. We're committed to creating an inclusive workplace where employees can grow, contribute, and thrive.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Whether you're looking to advance your career in food production, electronics innovation, real estate development, or corporate functions, Vara Group offers challenging opportunities and a supportive environment.
+                Whether you're looking to advance your career in food production, electronics innovation, real estate development, or corporate functions, Vara Global Trading offers challenging opportunities and a supportive environment.
               </p>
               <p className="text-lg text-gray-700">
                 Join us in our mission to enhance lives through quality products and services across Africa and beyond.
@@ -127,7 +127,7 @@ const Careers = () => {
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-vara-primary rounded-xl opacity-20 animate-pulse-slow"></div>
                 <img
                   src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=700"
-                  alt="Team members at Vara Group"
+                  alt="Team members at Vara Global Trading"
                   className="w-full h-auto rounded-xl shadow-lg relative z-10"
                 />
               </div>

@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-4">VARA GROUP</h3>
+            <h3 className="text-2xl font-bold mb-4">VARA GLOBAL TRADING</h3>
             <p className="text-white/80 max-w-xs">
               Empowering lives through quality and innovation across Foods, Electronics, and Real Estate.
             </p>
@@ -98,7 +98,7 @@ const Footer = () => {
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-3 text-vara-secondary flex-shrink-0" />
                 <span className="text-white/80">
-                  Vara Group Headquarters, 123 Business Avenue, Lagos, Nigeria
+                  Vara Global Trading Headquarters, 123 Business Avenue, Lagos, Nigeria
                 </span>
               </li>
               <li className="flex">
@@ -107,7 +107,7 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 text-vara-secondary flex-shrink-0" />
-                <span className="text-white/80">info@varagroup.com</span>
+                <span className="text-white/80">info@varatrading.com</span>
               </li>
             </ul>
           </div>
@@ -116,7 +116,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm">
-              &copy; {currentYear} Vara Group. All rights reserved.
+              &copy; {currentYear} Vara Global Trading. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-white/60 hover:text-white text-sm transition-colors">

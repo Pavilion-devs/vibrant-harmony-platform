@@ -35,7 +35,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">
                 For general inquiries and information about our products and services.
               </p>
-              <a href="mailto:info@varagroup.com" className="text-vara-primary font-medium hover:underline">info@varagroup.com</a>
+              <a href="mailto:info@varatrading.com" className="text-vara-primary font-medium hover:underline">info@varatrading.com</a>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm text-center">
@@ -124,7 +124,7 @@ const Contact = () => {
                     allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Vara Group Headquarters"
+                    title="Vara Global Trading Headquarters"
                   ></iframe>
                 </div>
               </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                   <div className="flex">
                     <MapPin className="h-5 w-5 text-vara-secondary mr-3 flex-shrink-0 mt-1" />
                     <p className="text-gray-600">
-                      Vara Group HQ, 123 Business Avenue, Victoria Island, Lagos, Nigeria
+                      Vara Global Trading HQ, 123 Business Avenue, Ikeja, Lagos, Nigeria
                     </p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ const Contact = () => {
                   <div className="flex">
                     <MapPin className="h-5 w-5 text-vara-secondary mr-3 flex-shrink-0 mt-1" />
                     <p className="text-gray-600">
-                      Vara Group Abuja, 45 Central Business District, Abuja, Nigeria
+                      Vara Global Trading Abuja, 45 Central Business District, Abuja, Nigeria
                     </p>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ const Contact = () => {
               </p>
               <p className="flex items-center text-gray-700">
                 <Mail className="h-4 w-4 mr-2 text-vara-secondary" />
-                <a href="mailto:support@varagroup.com" className="hover:underline">support@varagroup.com</a>
+                <a href="mailto:support@varatrading.com" className="hover:underline">support@varatrading.com</a>
               </p>
               <p className="flex items-center text-gray-700 mt-1">
                 <Phone className="h-4 w-4 mr-2 text-vara-secondary" />
@@ -197,7 +197,7 @@ const Contact = () => {
               </p>
               <p className="flex items-center text-gray-700">
                 <Mail className="h-4 w-4 mr-2 text-vara-secondary" />
-                <a href="mailto:partnerships@varagroup.com" className="hover:underline">partnerships@varagroup.com</a>
+                <a href="mailto:partnerships@varatrading.com" className="hover:underline">partnerships@varatrading.com</a>
               </p>
               <p className="flex items-center text-gray-700 mt-1">
                 <Phone className="h-4 w-4 mr-2 text-vara-secondary" />
@@ -212,7 +212,7 @@ const Contact = () => {
               </p>
               <p className="flex items-center text-gray-700">
                 <Mail className="h-4 w-4 mr-2 text-vara-secondary" />
-                <a href="mailto:media@varagroup.com" className="hover:underline">media@varagroup.com</a>
+                <a href="mailto:media@varatrading.com" className="hover:underline">media@varatrading.com</a>
               </p>
               <p className="flex items-center text-gray-700 mt-1">
                 <Phone className="h-4 w-4 mr-2 text-vara-secondary" />
@@ -227,7 +227,7 @@ const Contact = () => {
               </p>
               <p className="flex items-center text-gray-700">
                 <Mail className="h-4 w-4 mr-2 text-vara-secondary" />
-                <a href="mailto:careers@varagroup.com" className="hover:underline">careers@varagroup.com</a>
+                <a href="mailto:careers@varatrading.com" className="hover:underline">careers@varatrading.com</a>
               </p>
               <p className="flex items-center text-gray-700 mt-1">
                 <Phone className="h-4 w-4 mr-2 text-vara-secondary" />
@@ -242,7 +242,7 @@ const Contact = () => {
               </p>
               <p className="flex items-center text-gray-700">
                 <Mail className="h-4 w-4 mr-2 text-vara-secondary" />
-                <a href="mailto:investors@varagroup.com" className="hover:underline">investors@varagroup.com</a>
+                <a href="mailto:investors@varatrading.com" className="hover:underline">investors@varatrading.com</a>
               </p>
               <p className="flex items-center text-gray-700 mt-1">
                 <Phone className="h-4 w-4 mr-2 text-vara-secondary" />
@@ -257,7 +257,7 @@ const Contact = () => {
               </p>
               <p className="flex items-center text-gray-700">
                 <Mail className="h-4 w-4 mr-2 text-vara-secondary" />
-                <a href="mailto:tech@varagroup.com" className="hover:underline">tech@varagroup.com</a>
+                <a href="mailto:tech@varatrading.com" className="hover:underline">tech@varatrading.com</a>
               </p>
               <p className="flex items-center text-gray-700 mt-1">
                 <Phone className="h-4 w-4 mr-2 text-vara-secondary" />

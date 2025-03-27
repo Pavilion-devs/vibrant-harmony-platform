@@ -40,7 +40,7 @@ const Navbar = () => {
             <span className={cn(
               "text-2xl font-bold transition-colors",
               scrolled ? "text-vara-primary" : "text-white"
-            )}>VARA GROUP</span>
+            )}>VARA GLOBAL TRADING</span>
           </Link>
 
           {/* Desktop Menu */}

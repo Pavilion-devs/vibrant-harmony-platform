@@ -18,8 +18,8 @@ const products: Product[] = [
   // Food Products
   {
     id: 1,
-    name: "Premium Basmati Rice",
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e8ac?auto=format&fit=crop&q=80&w=600",
+    name: "Vegetable Oil",
+    image: "/oil.png",
     category: "food",
     description: "High-quality long grain rice, perfect for any meal.",
     certifications: ["ISO 22000", "HACCP Certified"]
@@ -27,31 +27,79 @@ const products: Product[] = [
   {
     id: 2,
     name: "Organic Tomato Paste",
-    image: "https://images.unsplash.com/photo-1608500219063-e5154ff20ced?auto=format&fit=crop&q=80&w=600",
+    image: "/paste.png",
     category: "food",
     description: "100% organic tomato paste with no additives or preservatives.",
     certifications: ["Organic Certified", "Non-GMO"]
   },
   {
     id: 3,
-    name: "Spice Collection",
-    image: "https://images.unsplash.com/photo-1532336414046-ba438150c179?auto=format&fit=crop&q=80&w=600",
+    name: "Seasoning Powder",
+    image: "/powder.png",
     category: "food",
     description: "Premium spices to enhance the flavor of any dish.",
     certifications: ["ISO 22000", "Premium Quality"]
   },
+  {
+    id: 4,
+    name: "Chilli Powder",
+    image: "/chilli.png",
+    category: "food",
+    description: "Our premium spice collection features locally sourced herbs and spices that add authentic flavor to any dish.",
+    certifications: ["ISO 22000", "Premium Quality"]
+  },
+  {
+    id: 4,
+    name: "Yellow Chicken Broth Pond",
+    image: "/broth.png",
+    category: "food",
+    description: "Our premium spice collection features locally sourced herbs and spices that add authentic flavor to any dish.",
+    certifications: ["ISO 22000", "Premium Quality"]
+  },
+  {
+    id: 5,
+    name: "Ground Cinnamon Spice",
+    image: "/spice.png",
+    category: "food",
+    description: "High-quality long grain rice, perfect for any meal.",
+    certifications: ["ISO 22000", "HACCP Certified"]
+  },
+  {
+    id: 6,
+    name: "Bay Leaf Pound",
+    image: "/leaf.png",
+    category: "food",
+    description: "High-quality long grain rice, perfect for any meal.",
+    certifications: ["ISO 22000", "HACCP Certified"]
+  },
+  {
+    id: 7,
+    name: "Garlic Powder",
+    image: "/garlic.png",
+    category: "food",
+    description: "High-quality long grain rice, perfect for any meal.",
+    certifications: ["ISO 22000", "HACCP Certified"]
+  },
+  {
+    id: 8,
+    name: "Black Pepper",
+    image: "/pepper.png",
+    category: "food",
+    description: "High-quality long grain rice, perfect for any meal.",
+    certifications: ["ISO 22000", "HACCP Certified"]
+  },
   
   // Electronics Products
   {
-    id: 4,
+    id: 9,
     name: "Smart Home System",
-    image: "https://images.unsplash.com/photo-1558002038-1055e2e94a17?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "electronics",
     description: "Integrated home automation for modern living.",
     certifications: ["Energy Star", "CE Certified"]
   },
   {
-    id: 5,
+    id: 10,
     name: "Energy Efficient Refrigerator",
     image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600",
     category: "electronics",
@@ -59,9 +107,9 @@ const products: Product[] = [
     certifications: ["Energy Star", "ISO 9001"]
   },
   {
-    id: 6,
+    id: 11,
     name: "Air Purification System",
-    image: "https://images.unsplash.com/photo-1527186504227-0a47655f8cae?auto=format&fit=crop&q=80&w=600",
+    image: "https://assets.grok.com/users/e07946c4-8876-4267-847e-4441f07e6bea/generated/WtV3WdTIjfZi7dmo/image.jpg",
     category: "electronics",
     description: "Advanced air purifier for healthier indoor environments.",
     certifications: ["HEPA Certified", "CE Certified"]
@@ -69,7 +117,7 @@ const products: Product[] = [
   
   // Real Estate Properties
   {
-    id: 7,
+    id: 12,
     name: "Lakeview Apartments",
     image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=600",
     category: "real-estate",
@@ -77,7 +125,7 @@ const products: Product[] = [
     certifications: ["LEED Certified", "Smart Home Ready"]
   },
   {
-    id: 8,
+    id: 13,
     name: "Eco-Garden Homes",
     image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=600",
     category: "real-estate",
@@ -85,7 +133,7 @@ const products: Product[] = [
     certifications: ["Green Building Certified", "Energy Efficient"]
   },
   {
-    id: 9,
+    id: 14,
     name: "Horizon Business Park",
     image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=600",
     category: "real-estate",

@@ -79,7 +79,7 @@ const InvestorRelations = () => {
                 Investing in Innovation
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Vara Group represents a compelling investment opportunity across multiple sectors with strong growth potential. Our diverse portfolio, spanning Foods, Electronics, and Real Estate, provides a balanced approach to market fluctuations.
+                Vara Global Trading represents a compelling investment opportunity across multiple sectors with strong growth potential. Our diverse portfolio, spanning Foods, Electronics, and Real Estate, provides a balanced approach to market fluctuations.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 We maintain a commitment to sustainable growth, operational excellence, and strategic expansion, creating long-term value for our shareholders and stakeholders.
@@ -149,7 +149,7 @@ const InvestorRelations = () => {
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Investment Opportunities</h2>
             <p className="section-subtitle mx-auto">
-              Explore opportunities to grow with Vara Group across our diverse business portfolio.
+              Explore opportunities to grow with Vara Global Trading across our diverse business portfolio.
             </p>
           </div>
 
@@ -161,7 +161,7 @@ const InvestorRelations = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-vara-primary">Equity Investment</h3>
                 <p className="text-gray-600 mb-6">
-                  Become a shareholder in Vara Group and participate in our long-term growth journey across multiple sectors.
+                  Become a shareholder in Vara Global Trading and participate in our long-term growth journey across multiple sectors.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
@@ -227,7 +227,7 @@ const InvestorRelations = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4 text-vara-primary">Corporate Bonds</h3>
                 <p className="text-gray-600 mb-6">
-                  Invest in Vara Group's growth through our corporate bond program with competitive interest rates.
+                  Invest in Vara Global Trading's growth through our corporate bond program with competitive interest rates.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
@@ -267,7 +267,7 @@ const InvestorRelations = () => {
                 <p className="mb-4 text-white/80">
                   Contact our retail investor support team for general inquiries and information.
                 </p>
-                <p className="font-medium">investors@varagroup.com</p>
+                <p className="font-medium">investors@varatrading.com</p>
                 <p className="font-medium">+234 (0) 123 456 7891</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
@@ -275,7 +275,7 @@ const InvestorRelations = () => {
                 <p className="mb-4 text-white/80">
                   Our institutional investment team is ready to discuss strategic partnerships.
                 </p>
-                <p className="font-medium">institutional@varagroup.com</p>
+                <p className="font-medium">institutional@varatrading.com</p>
                 <p className="font-medium">+234 (0) 123 456 7892</p>
               </div>
             </div>
