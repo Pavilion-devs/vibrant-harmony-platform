@@ -87,7 +87,7 @@ const VaraElectronics = () => {
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-vara-secondary rounded-xl opacity-20 animate-pulse-slow"></div>
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-vara-primary rounded-xl opacity-20 animate-pulse-slow"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1581092921461-39b21c9c9c2f?auto=format&fit=crop&q=80&w=700"
+                  src="https://images.unsplash.com/photo-1595303526913-c7037797ebe7?q=80&w=3629&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Vara Electronics Innovation"
                   className="w-full h-auto rounded-xl shadow-lg relative z-10"
                 />

@@ -201,7 +201,10 @@ const Careers = () => {
           </div>
 
           <div className="flex flex-col md:flex-row gap-6 md:items-center mb-12">
-            <div className="relative flex-grow">
+          <p className="section-subtitle mx-auto">
+              Coming Soon
+            </p>
+            {/* <div className="relative flex-grow">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
@@ -210,9 +213,9 @@ const Careers = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-            </div>
+            </div> */}
             
-            <div className="flex flex-wrap gap-2">
+            {/* <div className="flex flex-wrap gap-2">
               <button 
                 className={cn(
                   "px-4 py-2 rounded-lg transition-all duration-300",
@@ -257,10 +260,10 @@ const Careers = () => {
               >
                 Contract
               </button>
-            </div>
+            </div> */}
           </div>
 
-          {filteredJobs.length > 0 ? (
+          {/* {filteredJobs.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {filteredJobs.map((job) => (
                 <a 
@@ -297,13 +300,7 @@ const Careers = () => {
                   </div>
                 </a>
               ))}
-            </div>
-          ) : (
-            <div className="text-center py-12 bg-white rounded-xl shadow-sm">
-              <h3 className="text-xl font-medium text-gray-700 mb-2">No positions found</h3>
-              <p className="text-gray-500">Try adjusting your search or filter criteria</p>
-            </div>
-          )}
+            </div> */}
         </div>
       </section>
 
