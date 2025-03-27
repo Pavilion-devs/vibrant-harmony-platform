@@ -14,7 +14,7 @@ const PageHeader = ({ title, subtitle, image, children, className }: PageHeaderP
   return (
     <div 
       className={cn(
-        "relative h-[40vh] md:h-[50vh] flex items-center",
+        "relative h-[40vh] md:h-[50vh] flex items-center pt-16",
         className
       )}
     >

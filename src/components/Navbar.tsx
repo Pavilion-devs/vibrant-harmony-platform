@@ -37,20 +37,32 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center" onClick={closeMenu}>
-            <span className="text-2xl font-bold text-vara-primary">VARA GROUP</span>
+            <span className={cn(
+              "text-2xl font-bold transition-colors",
+              scrolled ? "text-vara-primary" : "text-white"
+            )}>VARA GROUP</span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <NavLink to="/" className="nav-link">
+            <NavLink to="/" className={cn(
+              "nav-link",
+              scrolled ? "text-foreground/80" : "text-white"
+            )}>
               Home
             </NavLink>
-            <NavLink to="/about" className="nav-link">
+            <NavLink to="/about" className={cn(
+              "nav-link", 
+              scrolled ? "text-foreground/80" : "text-white"
+            )}>
               About Us
             </NavLink>
             <div className="relative group">
               <button 
-                className="nav-link flex items-center"
+                className={cn(
+                  "nav-link flex items-center",
+                  scrolled ? "text-foreground/80" : "text-white"
+                )}
                 onClick={() => setIndustryDropdownOpen(!industryDropdownOpen)}
                 onMouseEnter={() => setIndustryDropdownOpen(true)}
                 onMouseLeave={() => setIndustryDropdownOpen(false)}
@@ -81,26 +93,44 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <NavLink to="/products" className="nav-link">
+            <NavLink to="/products" className={cn(
+              "nav-link",
+              scrolled ? "text-foreground/80" : "text-white"
+            )}>
               Products
             </NavLink>
-            <NavLink to="/investors" className="nav-link">
+            <NavLink to="/investors" className={cn(
+              "nav-link",
+              scrolled ? "text-foreground/80" : "text-white"
+            )}>
               Investors
             </NavLink>
-            <NavLink to="/careers" className="nav-link">
+            <NavLink to="/careers" className={cn(
+              "nav-link",
+              scrolled ? "text-foreground/80" : "text-white"
+            )}>
               Careers
             </NavLink>
-            <NavLink to="/contact" className="nav-link">
+            <NavLink to="/contact" className={cn(
+              "nav-link",
+              scrolled ? "text-foreground/80" : "text-white"
+            )}>
               Contact
             </NavLink>
-            <NavLink to="/blog" className="nav-link">
+            <NavLink to="/blog" className={cn(
+              "nav-link",
+              scrolled ? "text-foreground/80" : "text-white"
+            )}>
               Blog
             </NavLink>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-vara-primary focus:outline-none"
+            className={cn(
+              "md:hidden focus:outline-none",
+              scrolled ? "text-vara-primary" : "text-white"
+            )}
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
