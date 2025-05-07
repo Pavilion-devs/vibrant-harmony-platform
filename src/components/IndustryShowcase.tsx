@@ -41,7 +41,7 @@ interface IndustryShowcaseProps {
 
 const IndustryShowcase = ({ className }: IndustryShowcaseProps) => {
   return (
-    <section id="industries" className={cn("py-20 px-6 md:px-12", className)}>
+    <section id="industries" className={cn("py-20 px-4 md:px-12", className)}>
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-4">Our Industries</h2>

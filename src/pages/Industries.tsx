@@ -18,7 +18,7 @@ const Industries = () => {
         image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
+      <section className="py-20 px-4 md:px-12">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Driving Innovation Across Sectors</h2>

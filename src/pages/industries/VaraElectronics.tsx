@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
@@ -65,7 +64,7 @@ const VaraElectronics = () => {
         image="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
+      <section className="py-20 px-4 md:px-12">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -97,7 +96,7 @@ const VaraElectronics = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
+      <section className="py-20 px-4 md:px-12 bg-vara-light">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Products</h2>
@@ -139,7 +138,7 @@ const VaraElectronics = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12">
+      <section className="py-20 px-4 md:px-12">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Innovation Principles</h2>
