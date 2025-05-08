@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
@@ -28,7 +29,7 @@ const products: Product[] = [
   {
     id: 2,
     name: "Energy Efficient Refrigerator",
-    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600",
+    image: "/lovable-uploads/aa9f4e4a-c3c5-4945-a5ab-b6b51cf286f5.png",
     description: "Designed with cutting-edge cooling technology, our refrigerators maintain optimal food freshness while minimizing energy consumption.",
     features: [
       "Advanced temperature control",
@@ -40,7 +41,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Air Purification System",
-    image: "https://assets.grok.com/users/e07946c4-8876-4267-847e-4441f07e6bea/generated/WtV3WdTIjfZi7dmo/image.jpg",
+    image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=600",
     description: "Create a healthier living environment with our advanced air purification systems that remove pollutants, allergens, and odors.",
     features: [
       "HEPA filtration",
@@ -107,30 +108,30 @@ const VaraElectronics = () => {
 
           <div className="space-y-16">
             {products.map((product, index) => (
-              <div key={product.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-                <div className={index % 2 !== 0 ? 'order-2 lg:order-1' : ''}>
-                  <div className="bg-white rounded-xl overflow-hidden shadow-md">
+              <div key={product.id} className="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div className={`grid grid-cols-1 ${index % 2 !== 0 ? 'lg:grid-cols-2 lg:flex-row-reverse' : 'lg:grid-cols-2'}`}>
+                  <div className={`${index % 2 !== 0 ? 'order-1 lg:order-2' : ''}`}>
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-auto"
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                </div>
-                <div className={index % 2 !== 0 ? 'order-1 lg:order-2' : ''}>
-                  <h3 className="text-2xl font-semibold mb-4 text-vara-primary">{product.name}</h3>
-                  <p className="text-gray-700 mb-6">{product.description}</p>
-                  <div className="space-y-3 mb-6">
-                    {product.features.map((feature, i) => (
-                      <div key={i} className="flex items-start">
-                        <Check className="h-5 w-5 text-vara-secondary mr-2 flex-shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </div>
-                    ))}
+                  <div className={`p-8 flex flex-col justify-center ${index % 2 !== 0 ? 'order-2 lg:order-1' : ''}`}>
+                    <h3 className="text-2xl font-semibold mb-4 text-vara-primary">{product.name}</h3>
+                    <p className="text-gray-700 mb-6">{product.description}</p>
+                    <div className="space-y-3 mb-6">
+                      {product.features.map((feature, i) => (
+                        <div key={i} className="flex items-start">
+                          <Check className="h-5 w-5 text-vara-secondary mr-2 flex-shrink-0 mt-0.5" />
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <Link to="/products" className="vara-btn-primary inline-flex items-center self-start">
+                      View Details <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </div>
-                  <Link to="/products" className="vara-btn-primary inline-flex items-center">
-                    View Details <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
                 </div>
               </div>
             ))}
