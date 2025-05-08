@@ -18,10 +18,10 @@ const AboutUs = () => {
         image="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center">
               <h2 className="heading-underline text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
                 Our Story
               </h2>
@@ -42,7 +42,7 @@ const AboutUs = () => {
                 <img
                   src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=700"
                   alt="Vara Group Headquarters"
-                  className="w-full h-auto rounded-xl shadow-lg relative z-10"
+                  className="w-full h-64 rounded-xl shadow-lg relative z-10"
                 />
               </div>
             </div>
@@ -50,8 +50,8 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-6">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Leadership</h2>
             <p className="section-subtitle mx-auto">
@@ -110,8 +110,8 @@ const AboutUs = () => {
 
       <MilestonesTimeline />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Corporate Social Responsibility</h2>
             <p className="section-subtitle mx-auto">

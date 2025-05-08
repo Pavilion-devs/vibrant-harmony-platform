@@ -71,7 +71,7 @@ const ProductsShowcase = () => {
     : products.filter(product => product.category === activeFilter);
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-vara-accent">
+    <section className="py-20 md:px-12 bg-vara-accent">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-4">Featured Products</h2>

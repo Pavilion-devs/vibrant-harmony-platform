@@ -24,7 +24,7 @@ const PageHeader = ({ title, subtitle, image, children, className }: PageHeaderP
       />
       <div className="absolute inset-0 bg-vara-primary/60 z-0" />
       
-      <div className="container mx-auto px-6 md:px-12 relative z-10 text-white">
+      <div className="container mx-auto px-4 md:px-12 relative z-10 text-white">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             {title}

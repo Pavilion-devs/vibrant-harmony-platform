@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
 import { Check, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface Product {
   id: number;
@@ -41,7 +42,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Spice Collection",
-    image: "https://images.unsplash.com/photo-1532336414046-ba438150c179?auto=format&fit=crop&q=80&w=600",
+    image: "/garlic.png",
     description: "Our premium spice collection features locally sourced herbs and spices that add authentic flavor to any dish.",
     features: [
       "Freshly ground",
@@ -65,20 +66,20 @@ const VaraFoods = () => {
         image="https://images.unsplash.com/photo-1534483509719-3feaee7c30da?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="heading-underline text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
+            <div className="text-center">
+              <h2 className="heading-underline text-center text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
                 About Vara Foods
               </h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Established in 2005, Vara Foods is dedicated to providing high-quality staple foods that form the foundation of nutritious meals in homes across Africa.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Our commitment to quality begins with careful sourcing of raw materials, continues through our state-of-the-art processing facilities, and extends to our rigorous quality control measures.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-left text-gray-700">
                 With a focus on nutrition, flavor, and sustainability, we aim to be the preferred choice for households seeking reliable, wholesome food products.
               </p>
             </div>
@@ -97,8 +98,8 @@ const VaraFoods = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Products</h2>
             <p className="section-subtitle mx-auto">
@@ -108,30 +109,30 @@ const VaraFoods = () => {
 
           <div className="space-y-16">
             {products.map((product, index) => (
-              <div key={product.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-                <div className={index % 2 !== 0 ? 'order-2 lg:order-1' : ''}>
-                  <div className="bg-white rounded-xl overflow-hidden shadow-md">
+              <div key={product.id} className="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div className={`grid grid-cols-1 ${index % 2 !== 0 ? 'lg:grid-cols-2 lg:flex-row-reverse' : 'lg:grid-cols-2'}`}>
+                  <div className={`${index % 2 !== 0 ? 'order-1 lg:order-2' : ''}`}>
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-auto"
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                </div>
-                <div className={index % 2 !== 0 ? 'order-1 lg:order-2' : ''}>
-                  <h3 className="text-2xl font-semibold mb-4 text-vara-primary">{product.name}</h3>
-                  <p className="text-gray-700 mb-6">{product.description}</p>
-                  <div className="space-y-3 mb-6">
-                    {product.features.map((feature, i) => (
-                      <div key={i} className="flex items-start">
-                        <Check className="h-5 w-5 text-vara-secondary mr-2 flex-shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </div>
-                    ))}
+                  <div className={`p-8 flex flex-col justify-center ${index % 2 !== 0 ? 'order-2 lg:order-1' : ''}`}>
+                    <h3 className="text-2xl font-semibold mb-4 text-vara-primary">{product.name}</h3>
+                    <p className="text-gray-700 mb-6">{product.description}</p>
+                    <div className="space-y-3 mb-6">
+                      {product.features.map((feature, i) => (
+                        <div key={i} className="flex items-start">
+                          <Check className="h-5 w-5 text-vara-secondary mr-2 flex-shrink-0 mt-0.5" />
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <Link to="/products" className="vara-btn-primary inline-flex items-center self-start">
+                      View Details <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </div>
-                  <Link to="/products" className="vara-btn-primary inline-flex items-center">
-                    View Details <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
                 </div>
               </div>
             ))}
@@ -139,8 +140,8 @@ const VaraFoods = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Quality Commitment</h2>
             <p className="section-subtitle mx-auto">

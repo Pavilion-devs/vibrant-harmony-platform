@@ -69,7 +69,7 @@ const TestimonialsSection = () => {
   }, [currentSlide, isAnimating]);
 
   return (
-    <section className="bg-white py-20 px-6 md:px-12">
+    <section className="bg-white py-20 md:px-12">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-4">What Our Partners Say</h2>

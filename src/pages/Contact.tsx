@@ -17,8 +17,8 @@ const Contact = () => {
         image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">How Can We Help?</h2>
             <p className="section-subtitle mx-auto">
@@ -165,8 +165,8 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Department Contacts</h2>
             <p className="section-subtitle mx-auto">

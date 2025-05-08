@@ -104,20 +104,20 @@ const Careers = () => {
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="heading-underline text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
+            <div className="text-center">
+              <h2 className="heading-underline text-left text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
                 Work With Purpose
               </h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 At Vara Global Trading, we believe that our success is built on the talents, dedication, and innovation of our diverse team. We're committed to creating an inclusive workplace where employees can grow, contribute, and thrive.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Whether you're looking to advance your career in food production, electronics innovation, real estate development, or corporate functions, Vara Global Trading offers challenging opportunities and a supportive environment.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-left text-gray-700">
                 Join us in our mission to enhance lives through quality products and services across Africa and beyond.
               </p>
             </div>
@@ -136,8 +136,8 @@ const Careers = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Culture & Benefits</h2>
             <p className="section-subtitle mx-auto">
@@ -191,8 +191,8 @@ const Careers = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Current Openings</h2>
             <p className="section-subtitle mx-auto">
@@ -304,8 +304,8 @@ const Careers = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-primary text-white">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-primary text-white">
+        <div className="px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">
               Don't See a Perfect Fit?

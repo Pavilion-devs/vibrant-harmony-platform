@@ -71,20 +71,20 @@ const InvestorRelations = () => {
         image="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center">
               <h2 className="heading-underline text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
                 Investing in Innovation
               </h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Vara Global Trading represents a compelling investment opportunity across multiple sectors with strong growth potential. Our diverse portfolio, spanning Foods, Electronics, and Real Estate, provides a balanced approach to market fluctuations.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 We maintain a commitment to sustainable growth, operational excellence, and strategic expansion, creating long-term value for our shareholders and stakeholders.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-left text-gray-700">
                 Our strong financial foundation, experienced leadership team, and focus on innovation position us to capitalize on emerging opportunities in our target markets.
               </p>
             </div>
@@ -103,8 +103,8 @@ const InvestorRelations = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Financial Reports</h2>
             <p className="section-subtitle mx-auto">
@@ -144,8 +144,8 @@ const InvestorRelations = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Investment Opportunities</h2>
             <p className="section-subtitle mx-auto">
@@ -252,8 +252,8 @@ const InvestorRelations = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-primary text-white">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-primary text-white">
+        <div className="px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">
               Contact Investor Relations

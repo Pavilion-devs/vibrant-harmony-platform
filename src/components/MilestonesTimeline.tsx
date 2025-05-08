@@ -41,39 +41,40 @@ const milestones: Milestone[] = [
 
 const MilestonesTimeline = () => {
   return (
-    <section className="py-20 px-6 md:px-12 bg-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="section-title mb-4">Company Milestones</h2>
-          <p className="section-subtitle mx-auto">
-            A journey of growth, innovation, and impact over the years.
-          </p>
-        </div>
+    <div></div>
+    // <section className="py-20 md:px-12 bg-white">
+    //   <div className="container mx-auto">
+    //     <div className="text-center mb-16">
+    //       <h2 className="section-title mb-4">Company Milestones</h2>
+    //       <p className="section-subtitle mx-auto">
+    //         A journey of growth, innovation, and impact over the years.
+    //       </p>
+    //     </div>
 
-        <div className="max-w-4xl mx-auto">
-          {milestones.map((milestone, index) => (
-            <div 
-              key={milestone.id} 
-              className="timeline-item animate-fade-in"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <div className="timeline-marker" />
-              <div className="timeline-content">
-                <div className="bg-vara-light rounded-lg p-6 shadow-sm">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h3 className="text-xl font-semibold text-vara-primary">{milestone.title}</h3>
-                    <span className="text-vara-secondary font-medium bg-vara-accent px-3 py-1 rounded-full text-sm mt-2 md:mt-0">
-                      {milestone.year}
-                    </span>
-                  </div>
-                  <p className="text-gray-600">{milestone.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    //     <div className="max-w-4xl mx-auto">
+    //       {milestones.map((milestone, index) => (
+    //         <div 
+    //           key={milestone.id} 
+    //           className="timeline-item animate-fade-in"
+    //           style={{ animationDelay: `${index * 150}ms` }}
+    //         >
+    //           <div className="timeline-marker" />
+    //           <div className="timeline-content">
+    //             <div className="bg-vara-light rounded-lg p-6 shadow-sm">
+    //               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+    //                 <h3 className="text-xl font-semibold text-vara-primary">{milestone.title}</h3>
+    //                 <span className="text-vara-secondary font-medium bg-vara-accent px-3 py-1 rounded-full text-sm mt-2 md:mt-0">
+    //                   {milestone.year}
+    //                 </span>
+    //               </div>
+    //               <p className="text-gray-600">{milestone.description}</p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
   );
 };
 

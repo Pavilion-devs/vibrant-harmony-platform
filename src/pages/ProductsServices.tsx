@@ -109,7 +109,7 @@ const products: Product[] = [
   {
     id: 11,
     name: "Air Purification System",
-    image: "https://assets.grok.com/users/e07946c4-8876-4267-847e-4441f07e6bea/generated/WtV3WdTIjfZi7dmo/image.jpg",
+    image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=600",
     category: "electronics",
     description: "Advanced air purifier for healthier indoor environments.",
     certifications: ["HEPA Certified", "CE Certified"]
@@ -163,8 +163,8 @@ const ProductsServices = () => {
         image="https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-4">
           <div className="flex flex-col md:flex-row gap-6 md:items-center mb-12">
             <div className="relative flex-grow">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -284,8 +284,8 @@ const ProductsServices = () => {
         </div>
       </section>
 
-      <section id="quote" className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section id="quote" className="py-20 md:px-12 bg-vara-light">
+        <div className="px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="section-title mb-4">Request a Quote</h2>

@@ -46,7 +46,7 @@ const Navbar = () => {
         "py-4" // Consistent padding
       )}
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 md:px-12">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center" onClick={closeMenu}>
             <span
@@ -196,7 +196,7 @@ const Navbar = () => {
             isOpen ? "translate-x-0" : "translate-x-full"
           )}
         >
-          <div className="flex flex-col space-y-4 p-6 text-lg">
+          <div className="flex flex-col space-y-4 p-4 text-lg">
             <NavLink to="/" className="py-2" onClick={closeMenu}>
               Home
             </NavLink>

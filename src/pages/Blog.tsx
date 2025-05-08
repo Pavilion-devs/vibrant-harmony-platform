@@ -19,56 +19,6 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    id: 1,
-    title: "The Future of Sustainable Food Production in Africa",
-    excerpt: "Exploring innovative approaches to enhance food security while minimizing environmental impact across the continent.",
-    image: "https://images.unsplash.com/photo-1592982551635-069fee19abc9?auto=format&fit=crop&q=80&w=600",
-    date: "May 15, 2023",
-    author: "Dr. Adebayo Johnson",
-    readTime: "5 min read",
-    category: "industry-insights"
-  },
-  {
-    id: 2,
-    title: "Vara Global Trading Expands Electronic Manufacturing Facilities",
-    excerpt: "Announcing our new state-of-the-art production facility that will increase capacity and create jobs in the region.",
-    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=600",
-    date: "April 28, 2023",
-    author: "Folake Adeosun",
-    readTime: "3 min read",
-    category: "company-news"
-  },
-  {
-    id: 3,
-    title: "Building Communities: The Eco-Garden Homes Initiative",
-    excerpt: "How our sustainable housing projects are transforming neighborhoods and setting new standards for green building.",
-    image: "https://images.unsplash.com/photo-1604014138233-43383d51fe3e?auto=format&fit=crop&q=80&w=600",
-    date: "April 10, 2023",
-    author: "Emmanuel Okonkwo",
-    readTime: "4 min read",
-    category: "csr-initiatives"
-  },
-  {
-    id: 4,
-    title: "Smart Home Technology Trends for 2023",
-    excerpt: "Discover the latest innovations in home automation and how they're enhancing comfort, security, and energy efficiency.",
-    image: "https://images.unsplash.com/photo-1558002038-1055e2e94a17?auto=format&fit=crop&q=80&w=600",
-    date: "March 22, 2023",
-    author: "Chioma Nwosu",
-    readTime: "6 min read",
-    category: "industry-insights"
-  },
-  {
-    id: 5,
-    title: "Vara Foods Launches New Product Line",
-    excerpt: "Introducing our new range of organic, locally-sourced food products designed to meet the growing demand for healthy options.",
-    image: "https://images.unsplash.com/photo-1594489573234-5e350efc85a6?auto=format&fit=crop&q=80&w=600",
-    date: "March 5, 2023",
-    author: "Aisha Omar",
-    readTime: "3 min read",
-    category: "company-news"
-  },
-  {
     id: 6,
     title: "Supporting Education in Rural Communities",
     excerpt: "Our foundation's initiatives to improve access to quality education and technology in underserved areas.",
@@ -102,8 +52,8 @@ const Blog = () => {
         image="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-4">
           <div className="flex flex-col md:flex-row gap-6 md:items-center mb-12">
             <div className="relative flex-grow">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -228,8 +178,8 @@ const Blog = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-vara-primary">
               Subscribe to Our Newsletter

@@ -41,7 +41,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Air Purification System",
-    image: "https://assets.grok.com/users/e07946c4-8876-4267-847e-4441f07e6bea/generated/WtV3WdTIjfZi7dmo/image.jpg",
+    image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=600",
     description: "Create a healthier living environment with our advanced air purification systems that remove pollutants, allergens, and odors.",
     features: [
       "HEPA filtration",
@@ -65,20 +65,20 @@ const VaraElectronics = () => {
         image="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="heading-underline text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
+            <div className="text-center">
+              <h2 className="heading-underline text-left text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
                 About Vara Electronics
               </h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Established in 2010, Vara Electronics creates innovative smart appliances and household technologies that enhance comfort, efficiency, and connectivity in modern homes.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Our R&D team is dedicated to developing products that combine cutting-edge technology with intuitive user experiences, ensuring that our solutions are accessible to everyone.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-left text-gray-700">
                 With a focus on energy efficiency and sustainability, we're committed to creating products that not only improve daily living but also minimize environmental impact.
               </p>
             </div>
@@ -97,8 +97,8 @@ const VaraElectronics = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Products</h2>
             <p className="section-subtitle mx-auto">
@@ -108,30 +108,30 @@ const VaraElectronics = () => {
 
           <div className="space-y-16">
             {products.map((product, index) => (
-              <div key={product.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-                <div className={index % 2 !== 0 ? 'order-2 lg:order-1' : ''}>
-                  <div className="bg-white rounded-xl overflow-hidden shadow-md">
+              <div key={product.id} className="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div className={`grid grid-cols-1 ${index % 2 !== 0 ? 'lg:grid-cols-2 lg:flex-row-reverse' : 'lg:grid-cols-2'}`}>
+                  <div className={`${index % 2 !== 0 ? 'order-1 lg:order-2' : ''}`}>
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-auto"
+                      className="w-full h-full object-cover"
                     />
                   </div>
-                </div>
-                <div className={index % 2 !== 0 ? 'order-1 lg:order-2' : ''}>
-                  <h3 className="text-2xl font-semibold mb-4 text-vara-primary">{product.name}</h3>
-                  <p className="text-gray-700 mb-6">{product.description}</p>
-                  <div className="space-y-3 mb-6">
-                    {product.features.map((feature, i) => (
-                      <div key={i} className="flex items-start">
-                        <Check className="h-5 w-5 text-vara-secondary mr-2 flex-shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </div>
-                    ))}
+                  <div className={`p-8 flex flex-col justify-center ${index % 2 !== 0 ? 'order-2 lg:order-1' : ''}`}>
+                    <h3 className="text-2xl font-semibold mb-4 text-vara-primary">{product.name}</h3>
+                    <p className="text-gray-700 mb-6">{product.description}</p>
+                    <div className="space-y-3 mb-6">
+                      {product.features.map((feature, i) => (
+                        <div key={i} className="flex items-start">
+                          <Check className="h-5 w-5 text-vara-secondary mr-2 flex-shrink-0 mt-0.5" />
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <Link to="/products" className="vara-btn-primary inline-flex items-center self-start">
+                      View Details <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </div>
-                  <Link to="/products" className="vara-btn-primary inline-flex items-center">
-                    View Details <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
                 </div>
               </div>
             ))}
@@ -139,8 +139,8 @@ const VaraElectronics = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Innovation Principles</h2>
             <p className="section-subtitle mx-auto">

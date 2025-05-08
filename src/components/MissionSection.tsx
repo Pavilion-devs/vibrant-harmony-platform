@@ -3,11 +3,11 @@ import { CheckCircle } from "lucide-react";
 
 const MissionSection = () => {
   return (
-    <section className="bg-vara-light py-20 px-6 md:px-12">
+    <section className="bg-vara-light py-20 md:px-12">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
-            <h2 className="heading-underline text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
+            <h2 className="heading-underline text-center text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
               Our Mission & Values
             </h2>
             <p className="text-lg text-gray-700 mb-6">
@@ -36,7 +36,7 @@ const MissionSection = () => {
                 </div>
               </div>
             </div>
-            <a href="/about" className="vara-btn-primary inline-block">
+            <a href="/about" className="vara-btn-primary text-center justify-center items-center inline-block">
               Learn About Our Company
             </a>
           </div>

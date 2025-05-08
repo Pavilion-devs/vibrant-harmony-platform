@@ -69,20 +69,20 @@ const VaraRealEstate = () => {
         image="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center">
               <h2 className="heading-underline text-3xl md:text-4xl font-semibold mb-8 text-vara-primary">
                 About Vara Real Estate
               </h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Established in 2015, Vara Real Estate develops residential and commercial properties that combine functionality, aesthetics, and sustainability.
               </p>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-left text-gray-700 mb-6">
                 Our portfolio includes luxury apartments, eco-friendly housing developments, and modern office spaces, all designed with attention to detail and built to the highest standards.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-left text-gray-700">
                 With a commitment to creating spaces that enhance quality of life and offer strong investment value, we're shaping the future of real estate in Nigeria and beyond.
               </p>
             </div>
@@ -101,8 +101,8 @@ const VaraRealEstate = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12 bg-vara-light">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12 bg-vara-light">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Featured Properties</h2>
             <p className="section-subtitle mx-auto">
@@ -144,8 +144,8 @@ const VaraRealEstate = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 md:px-12">
-        <div className="container mx-auto">
+      <section className="py-20 md:px-12">
+        <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Approach</h2>
             <p className="section-subtitle mx-auto">
