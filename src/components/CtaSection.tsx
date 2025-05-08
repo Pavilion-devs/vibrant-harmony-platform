@@ -13,7 +13,7 @@ const CtaSection = () => {
       />
       <div className="absolute inset-0 bg-vara-primary/85 backdrop-blur-sm z-0"></div>
       
-      <div className="container mx-auto px-4 md:px-12 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
             Ready to Partner with Vara Global Trading?
