@@ -7,7 +7,7 @@ interface Product {
   id: number;
   name: string;
   image: string;
-  category: "food" | "electronics" | "real-estate";
+  category: "food" | "electronics" | "trading";
   description: string;
   link: string;
 }
@@ -33,9 +33,9 @@ const products: Product[] = [
     id: 3,
     name: "Vegetable Oil",
     image: "/oil.png",
-    category: "electronics",
-    description: "Integrated home automation for modern living.",
-    link: "/products#smarthome",
+    category: "food",
+    description: "Premium vegetable oil for cooking and food preparation.",
+    link: "/products#oil",
   },
   {
     id: 4,
@@ -47,19 +47,19 @@ const products: Product[] = [
   },
   {
     id: 5,
-    name: "Lakeview Apartments",
-    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=600",
-    category: "real-estate",
-    description: "Luxury waterfront apartments in prime location.",
-    link: "/products#lakeview",
+    name: "PMS (Petrol Motor Spirit)",
+    image: "https://images.unsplash.com/photo-1545262811-8e4ab5ac6ead?auto=format&fit=crop&q=80&w=600",
+    category: "trading",
+    description: "High-quality petrol suitable for all types of vehicles, ensuring smooth performance and efficiency.",
+    link: "/products#pms",
   },
   {
     id: 6,
-    name: "Eco-Garden Homes",
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=600",
-    category: "real-estate",
-    description: "Sustainable housing development with green spaces.",
-    link: "/products#ecogarden",
+    name: "AGO (Automotive Gas Oil)",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=600",
+    category: "trading",
+    description: "Diesel fuel designed for commercial vehicles and industrial machinery, meeting all industry standards.",
+    link: "/products#ago",
   },
 ];
 
@@ -71,7 +71,7 @@ const ProductsShowcase = () => {
     : products.filter(product => product.category === activeFilter);
 
   return (
-    <section className="py-20 md:px-12 bg-vara-accent">
+    <section className="py-20 px-4 md:px-12 bg-vara-accent">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mb-4">Featured Products</h2>
@@ -116,13 +116,13 @@ const ProductsShowcase = () => {
             <button 
               className={cn(
                 "px-5 py-2 rounded-full transition-all duration-300",
-                activeFilter === "real-estate" 
+                activeFilter === "trading" 
                   ? "bg-vara-primary text-white" 
                   : "bg-white text-vara-primary hover:bg-vara-light"
               )}
-              onClick={() => setActiveFilter("real-estate")}
+              onClick={() => setActiveFilter("trading")}
             >
-              Real Estate
+              Trading
             </button>
           </div>
         </div>
@@ -151,7 +151,7 @@ const ProductsShowcase = () => {
                   )}>
                     {product.category === "food" ? "Food" : 
                      product.category === "electronics" ? "Electronics" : 
-                     "Real Estate"}
+                     "Trading"}
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-vara-primary">{product.name}</h3>

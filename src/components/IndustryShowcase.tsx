@@ -28,10 +28,10 @@ const industries: Industry[] = [
   },
   {
     id: 3,
-    name: "Vara Real Estate",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600",
-    description: "Sustainable housing developments and investment opportunities in prime locations across Nigeria.",
-    link: "/industries/real-estate",
+    name: "Vara Trading",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=600",
+    description: "Premier commodities trading company specializing in the procurement and distribution of petroleum products.",
+    link: "/industries",
   },
 ];
 

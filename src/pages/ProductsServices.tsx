@@ -2,14 +2,14 @@
 import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
-import { Search, Filter, ArrowRight } from "lucide-react";
+import { Search, Filter, ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Product {
   id: number;
   name: string;
   image: string;
-  category: "food" | "electronics" | "real-estate";
+  category: "food" | "electronics" | "trading";
   description: string;
   certifications: string[];
 }
@@ -49,7 +49,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "Premium Quality"]
   },
   {
-    id: 4,
+    id: 5,
     name: "Yellow Chicken Broth Pond",
     image: "/broth.png",
     category: "food",
@@ -57,7 +57,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "Premium Quality"]
   },
   {
-    id: 5,
+    id: 6,
     name: "Ground Cinnamon Spice",
     image: "/spice.png",
     category: "food",
@@ -65,7 +65,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "HACCP Certified"]
   },
   {
-    id: 6,
+    id: 7,
     name: "Bay Leaf Pound",
     image: "/leaf.png",
     category: "food",
@@ -73,7 +73,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "HACCP Certified"]
   },
   {
-    id: 7,
+    id: 8,
     name: "Garlic Powder",
     image: "/garlic.png",
     category: "food",
@@ -81,7 +81,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "HACCP Certified"]
   },
   {
-    id: 8,
+    id: 9,
     name: "Black Pepper",
     image: "/pepper.png",
     category: "food",
@@ -91,7 +91,7 @@ const products: Product[] = [
   
   // Electronics Products
   {
-    id: 9,
+    id: 10,
     name: "Smart Home System",
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "electronics",
@@ -99,7 +99,7 @@ const products: Product[] = [
     certifications: ["Energy Star", "CE Certified"]
   },
   {
-    id: 10,
+    id: 11,
     name: "Energy Efficient Refrigerator",
     image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600",
     category: "electronics",
@@ -107,7 +107,7 @@ const products: Product[] = [
     certifications: ["Energy Star", "ISO 9001"]
   },
   {
-    id: 11,
+    id: 12,
     name: "Air Purification System",
     image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=600",
     category: "electronics",
@@ -115,36 +115,52 @@ const products: Product[] = [
     certifications: ["HEPA Certified", "CE Certified"]
   },
   
-  // Real Estate Properties
-  {
-    id: 12,
-    name: "Lakeview Apartments",
-    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=600",
-    category: "real-estate",
-    description: "Luxury waterfront apartments in prime location.",
-    certifications: ["LEED Certified", "Smart Home Ready"]
-  },
+  // Trading Products (Petroleum)
   {
     id: 13,
-    name: "Eco-Garden Homes",
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=600",
-    category: "real-estate",
-    description: "Sustainable housing development with green spaces.",
-    certifications: ["Green Building Certified", "Energy Efficient"]
+    name: "PMS (Petrol Motor Spirit)",
+    image: "https://images.unsplash.com/photo-1545262811-8e4ab5ac6ead?auto=format&fit=crop&q=80&w=600",
+    category: "trading",
+    description: "High-quality petrol suitable for all types of vehicles, ensuring smooth performance and efficiency.",
+    certifications: ["International Standards", "Quality Assured"]
   },
   {
     id: 14,
-    name: "Horizon Business Park",
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=600",
-    category: "real-estate",
-    description: "Modern office spaces for businesses of all sizes.",
-    certifications: ["LEED Gold", "Smart Building"]
+    name: "AGO (Automotive Gas Oil)",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=600",
+    category: "trading",
+    description: "Diesel fuel designed for commercial vehicles and industrial machinery, meeting all industry standards.",
+    certifications: ["Industry Standards", "Quality Control"]
+  },
+  {
+    id: 15,
+    name: "Jet A-1",
+    image: "https://images.unsplash.com/photo-1544963850-6ad54ceac834?auto=format&fit=crop&q=80&w=600",
+    category: "trading",
+    description: "Aviation turbine fuel that meets international quality standards, ensuring safety and reliability for aircraft operations.",
+    certifications: ["Aviation Grade", "International Standards"]
+  },
+  {
+    id: 16,
+    name: "DPK (Dual Purpose Kerosene)",
+    image: "https://images.unsplash.com/photo-1545262811-8e4ab5ac6ead?auto=format&fit=crop&q=80&w=600",
+    category: "trading",
+    description: "Versatile kerosene used for lighting, heating, and industrial applications.",
+    certifications: ["Multi-Purpose", "Quality Certified"]
+  },
+  {
+    id: 17,
+    name: "LPG (Liquefied Petroleum Gas)",
+    image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&q=80&w=600",
+    category: "trading",
+    description: "Clean-burning fuel used in residential, commercial, and industrial sectors for cooking and heating.",
+    certifications: ["Clean Energy", "Safety Standards"]
   },
 ];
 
 const ProductsServices = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [activeFilter, setActiveFilter] = useState<"all" | "food" | "electronics" | "real-estate">("all");
+  const [activeFilter, setActiveFilter] = useState<"all" | "food" | "electronics" | "trading">("all");
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -163,8 +179,8 @@ const ProductsServices = () => {
         image="https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?auto=format&fit=crop&q=80&w=1920"
       />
 
-      <section className="py-20 md:px-12">
-        <div className="px-4">
+      <section className="py-20 px-4 md:px-12">
+        <div className="container mx-auto">
           <div className="flex flex-col md:flex-row gap-6 md:items-center mb-12">
             <div className="relative flex-grow">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -214,13 +230,13 @@ const ProductsServices = () => {
               <button 
                 className={cn(
                   "px-4 py-2 rounded-lg transition-all duration-300",
-                  activeFilter === "real-estate" 
+                  activeFilter === "trading" 
                     ? "bg-vara-primary text-white" 
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 )}
-                onClick={() => setActiveFilter("real-estate")}
+                onClick={() => setActiveFilter("trading")}
               >
-                Real Estate
+                Trading
               </button>
             </div>
           </div>
@@ -246,7 +262,7 @@ const ProductsServices = () => {
                       )}>
                         {product.category === "food" ? "Food" : 
                         product.category === "electronics" ? "Electronics" : 
-                        "Real Estate"}
+                        "Trading"}
                       </span>
                     </div>
                     <h3 className="text-xl font-semibold mb-2 text-vara-primary">{product.name}</h3>
@@ -284,8 +300,8 @@ const ProductsServices = () => {
         </div>
       </section>
 
-      <section id="quote" className="py-20 md:px-12 bg-vara-light">
-        <div className="px-4">
+      <section id="quote" className="py-20 px-4 md:px-12 bg-vara-light">
+        <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="section-title mb-4">Request a Quote</h2>
@@ -346,7 +362,7 @@ const ProductsServices = () => {
                   <option value="">Select a category</option>
                   <option value="food">Vara Foods</option>
                   <option value="electronics">Vara Electronics</option>
-                  <option value="real-estate">Vara Real Estate</option>
+                  <option value="trading">Vara Trading</option>
                 </select>
               </div>
               
@@ -366,6 +382,40 @@ const ProductsServices = () => {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Us Section */}
+      <section className="py-20 px-4 md:px-12">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">Contact Us</h2>
+            <p className="section-subtitle mx-auto">
+              For inquiries, partnerships, or quotations, please reach out to us.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+              <MapPin className="h-8 w-8 text-vara-primary mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Address</h3>
+              <p className="text-gray-600">
+                10A Ajanaku Street, off Salvation Road, Awuse Estate, Opebi, Lagos, Nigeria
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+              <Phone className="h-8 w-8 text-vara-primary mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Phone</h3>
+              <p className="text-gray-600">+234 7032-378-235</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+              <Mail className="h-8 w-8 text-vara-primary mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Email</h3>
+              <p className="text-gray-600">sales@varatrading.com</p>
+            </div>
           </div>
         </div>
       </section>
