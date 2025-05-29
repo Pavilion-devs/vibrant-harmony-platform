@@ -80,7 +80,7 @@ const HeroCarousel = () => {
           transition: "transform 10s ease-out",
         }}
       />
-      <div className="absolute inset-0 bg-vara-primary/30 pointer-events-none" />
+      <div className="absolute inset-0 bg-white/20 pointer-events-none" />
       
       <div className="absolute inset-0 flex items-center justify-center z-10">
         <div className="container mx-auto px-6 md:px-12 text-center">

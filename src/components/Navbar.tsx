@@ -56,7 +56,7 @@ const Navbar = () => {
                 scrolled && "md:text-vara-primary"
               )}
             >
-              VARA GLOBAL TRADING
+              <img src="/logo.png" className="w-full h-[64px]"/>
             </span>
           </Link>
 
