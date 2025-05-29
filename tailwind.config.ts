@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,14 +67,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				vara: {
-					primary: "#A50909", // Main red color
-					secondary: "#D32F2F", // Lighter red for accents
-					accent: "#FFF5F5", // Very light red/pink for backgrounds
+					primary: "#8B0000", // Darker, more sophisticated red
+					secondary: "#B91C1C", // Slightly lighter red for accents
+					accent: "#FEF2F2", // Very light red/pink for backgrounds
 					light: "#FFFFFF", // Pure white
-					dark: "#7F1D1D", // Darker red for depth
+					dark: "#450A0A", // Much darker red for depth
 					gray: "#6B7280", // Neutral gray for text
-					"gray-light": "#F3F4F6", // Light gray for subtle backgrounds
-					gold: "#D4AF37", // Complementary gold accent
+					"gray-light": "#F9FAFB", // Very light gray for subtle backgrounds
+					gold: "#F59E0B", // Warmer gold accent
+					crimson: "#DC2626", // Vibrant red for CTAs
+					burgundy: "#991B1B", // Rich burgundy for headers
 				}
 			},
 			borderRadius: {
