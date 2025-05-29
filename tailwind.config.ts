@@ -68,11 +68,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				vara: {
-					primary: "#0B1C3F",
-					secondary: "#4A6A9C", 
-					accent: "#E3EBF8",
-					light: "#F8FAFD",
-					dark: "#051128",
+					primary: "#A50909", // Main red color
+					secondary: "#D32F2F", // Lighter red for accents
+					accent: "#FFF5F5", // Very light red/pink for backgrounds
+					light: "#FFFFFF", // Pure white
+					dark: "#7F1D1D", // Darker red for depth
+					gray: "#6B7280", // Neutral gray for text
+					"gray-light": "#F3F4F6", // Light gray for subtle backgrounds
+					gold: "#D4AF37", // Complementary gold accent
 				}
 			},
 			borderRadius: {
