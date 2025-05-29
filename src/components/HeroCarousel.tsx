@@ -111,7 +111,7 @@ const HeroCarousel = () => {
   ))}
   {/* Rest of the code (arrows and pagination dots) remains unchanged */}
 
-      <button
+      {/* <button
         onClick={prevSlide}
         className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-300"
         aria-label="Previous slide"
@@ -125,7 +125,7 @@ const HeroCarousel = () => {
         aria-label="Next slide"
       >
         <ArrowRight className="h-6 w-6" />
-      </button>
+      </button> */}
 
       <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
         {slides.map((_, index) => (

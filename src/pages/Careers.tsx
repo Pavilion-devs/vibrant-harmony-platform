@@ -128,7 +128,7 @@ const Careers = () => {
                 <img
                   src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=700"
                   alt="Team members at Vara Global Trading"
-                  className="w-full h-auto rounded-xl shadow-lg relative z-10"
+                  className="w-full h-96 rounded-xl shadow-lg relative z-10"
                 />
               </div>
             </div>

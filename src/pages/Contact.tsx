@@ -135,12 +135,12 @@ const Contact = () => {
                   <div className="flex">
                     <MapPin className="h-5 w-5 text-vara-secondary mr-3 flex-shrink-0 mt-1" />
                     <p className="text-gray-600">
-                      Vara Global Trading HQ, 123 Business Avenue, Ikeja, Lagos, Nigeria
+                    10A Ajanaku Street, off Salvation Road, Awuse Estate, Opebi, Lagos, Nigeria
                     </p>
                   </div>
                 </div>
                 
-                <div className="bg-white p-6 rounded-xl shadow-sm">
+                {/* <div className="bg-white p-6 rounded-xl shadow-sm">
                   <h3 className="text-lg font-semibold mb-3 text-vara-primary">Abuja Office</h3>
                   <div className="flex">
                     <MapPin className="h-5 w-5 text-vara-secondary mr-3 flex-shrink-0 mt-1" />
@@ -148,7 +148,7 @@ const Contact = () => {
                       Vara Global Trading Abuja, 45 Central Business District, Abuja, Nigeria
                     </p>
                   </div>
-                </div>
+                </div> */}
                 
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                   <h3 className="text-lg font-semibold mb-3 text-vara-primary">Vara Foods Processing Center</h3>

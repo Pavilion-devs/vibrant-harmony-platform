@@ -98,16 +98,16 @@ const Footer = () => {
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-3 text-vara-secondary flex-shrink-0" />
                 <span className="text-white/80">
-                  Vara Global Trading Headquarters, 123 Business Avenue, Lagos, Nigeria
+                  10A Ajanaku Street, off Salvation Road, Awuse Estate, Opebi, Lagos, Nigeria
                 </span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 text-vara-secondary flex-shrink-0" />
-                <span className="text-white/80">+234 (0) 123 456 7890</span>
+                <span className="text-white/80">+234 7032-378-235</span>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 mr-3 text-vara-secondary flex-shrink-0" />
-                <span className="text-white/80">info@varatrading.com</span>
+                <span className="text-white/80">sales@varatrading.com</span>
               </li>
             </ul>
           </div>

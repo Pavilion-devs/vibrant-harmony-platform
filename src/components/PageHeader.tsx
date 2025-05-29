@@ -22,7 +22,7 @@ const PageHeader = ({ title, subtitle, image, children, className }: PageHeaderP
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ backgroundImage: `url(${image})` }}
       />
-      <div className="absolute inset-0 bg-vara-primary/60 z-0" />
+      <div className="absolute inset-0 bg-vara-primary/12 z-0" />
       
       <div className="container mx-auto px-4 md:px-12 relative z-10 text-white">
         <div className="max-w-4xl">

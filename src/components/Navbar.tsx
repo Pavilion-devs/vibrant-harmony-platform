@@ -139,7 +139,7 @@ const Navbar = () => {
             >
               Products
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/investors"
               className={cn(
                 "nav-link",
@@ -147,7 +147,7 @@ const Navbar = () => {
               )}
             >
               Investors
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/careers"
               className={cn(
@@ -166,7 +166,7 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/blog"
               className={cn(
                 "nav-link",
@@ -174,7 +174,7 @@ const Navbar = () => {
               )}
             >
               Blog
-            </NavLink>
+            </NavLink> */}
           </div>
 
           {/* Mobile Menu Button */}
