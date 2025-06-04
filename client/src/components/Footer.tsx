@@ -6,26 +6,28 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-vara-primary text-white pt-16 pb-8">
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-4">VARA GLOBAL TRADING</h3>
-            <p className="text-white/80 max-w-xs">
-              Empowering lives through quality and innovation across Foods, Electronics, and Real Estate.
+    <footer className="bg-gradient-to-br from-vara-primary via-vara-primary to-vara-dark text-white pt-16 sm:pt-20 lg:pt-24 pb-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="lg:col-span-2 space-y-6">
+            <div className="flex items-center space-x-3">
+              <img src="/logo.png" alt="Vara Global Trading" className="h-12 w-auto brightness-0 invert" />
+            </div>
+            <p className="text-white/90 max-w-md text-lg leading-relaxed">
+              Empowering lives through quality and innovation across Foods, Electronics, and Real Estate throughout Africa.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
+              <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
+                <Facebook className="h-5 w-5 text-white group-hover:text-white" />
               </a>
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
+                <Twitter className="h-5 w-5 text-white group-hover:text-white" />
               </a>
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
+                <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
               </a>
-              <a href="#" className="text-white/80 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
+                <Instagram className="h-5 w-5 text-white group-hover:text-white" />
               </a>
             </div>
           </div>

@@ -71,21 +71,27 @@ const ProductsShowcase = () => {
     : products.filter(product => product.category === activeFilter);
 
   return (
-    <section className="py-20 px-4 md:px-12 bg-vara-accent">
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="section-title mb-4">Featured Products</h2>
-          <p className="section-subtitle mx-auto">
-            Discover our range of high-quality products designed to improve daily living.
+    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <div className="inline-flex items-center bg-vara-accent rounded-full px-4 py-2 mb-6">
+            <span className="w-2 h-2 bg-vara-secondary rounded-full mr-3 animate-pulse"></span>
+            <span className="text-vara-primary text-sm font-medium">Our Products</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-vara-primary mb-6 leading-tight">
+            Premium Quality Products
+          </h2>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Discover our carefully curated selection of quality products designed to enhance lives across Africa
           </p>
 
-          <div className="flex flex-wrap justify-center gap-2 mt-8">
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
             <button 
               className={cn(
-                "px-5 py-2 rounded-full transition-all duration-300",
+                "px-6 py-3 rounded-full transition-all duration-300 font-medium text-sm sm:text-base",
                 activeFilter === "all" 
-                  ? "bg-vara-primary text-white" 
-                  : "bg-white text-vara-primary hover:bg-vara-light"
+                  ? "bg-vara-primary text-white shadow-lg" 
+                  : "bg-white text-vara-primary hover:bg-vara-accent border border-vara-primary/20"
               )}
               onClick={() => setActiveFilter("all")}
             >
@@ -93,10 +99,10 @@ const ProductsShowcase = () => {
             </button>
             <button 
               className={cn(
-                "px-5 py-2 rounded-full transition-all duration-300",
+                "px-6 py-3 rounded-full transition-all duration-300 font-medium text-sm sm:text-base",
                 activeFilter === "food" 
-                  ? "bg-vara-primary text-white" 
-                  : "bg-white text-vara-primary hover:bg-vara-light"
+                  ? "bg-vara-primary text-white shadow-lg" 
+                  : "bg-white text-vara-primary hover:bg-vara-accent border border-vara-primary/20"
               )}
               onClick={() => setActiveFilter("food")}
             >
@@ -104,10 +110,10 @@ const ProductsShowcase = () => {
             </button>
             <button 
               className={cn(
-                "px-5 py-2 rounded-full transition-all duration-300",
+                "px-6 py-3 rounded-full transition-all duration-300 font-medium text-sm sm:text-base",
                 activeFilter === "electronics" 
-                  ? "bg-vara-primary text-white" 
-                  : "bg-white text-vara-primary hover:bg-vara-light"
+                  ? "bg-vara-primary text-white shadow-lg" 
+                  : "bg-white text-vara-primary hover:bg-vara-accent border border-vara-primary/20"
               )}
               onClick={() => setActiveFilter("electronics")}
             >
@@ -115,10 +121,10 @@ const ProductsShowcase = () => {
             </button>
             <button 
               className={cn(
-                "px-5 py-2 rounded-full transition-all duration-300",
+                "px-6 py-3 rounded-full transition-all duration-300 font-medium text-sm sm:text-base",
                 activeFilter === "trading" 
-                  ? "bg-vara-primary text-white" 
-                  : "bg-white text-vara-primary hover:bg-vara-light"
+                  ? "bg-vara-primary text-white shadow-lg" 
+                  : "bg-white text-vara-primary hover:bg-vara-accent border border-vara-primary/20"
               )}
               onClick={() => setActiveFilter("trading")}
             >
