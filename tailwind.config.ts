@@ -61,6 +61,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        vara: {
+          primary: "hsl(221 64% 14%)",
+          secondary: "hsl(217 54% 45%)",
+          accent: "hsl(217 40% 94%)",
+          dark: "hsl(221 64% 10%)",
+        },
       },
       keyframes: {
         "accordion-down": {

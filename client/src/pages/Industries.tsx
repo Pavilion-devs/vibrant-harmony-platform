@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";

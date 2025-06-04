@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
 import { Calendar, User, Clock, ArrowRight, Search, Tag } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 import { cn } from "@/lib/utils";
 
 interface BlogPost {
