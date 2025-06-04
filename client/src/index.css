@@ -70,15 +70,15 @@
   }
   
   .section-padding {
-    @apply py-20 px-4 md:px-12 lg:px-24;
+    @apply py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 xl:px-12;
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
   }
 
   .section-subtitle {
-    @apply text-xl text-muted-foreground mb-12 max-w-3xl;
+    @apply text-lg sm:text-xl text-muted-foreground mb-8 sm:mb-12 max-w-3xl leading-relaxed;
   }
 
   .heading-underline {
@@ -102,11 +102,11 @@
   }
 
   .vara-btn-primary {
-    @apply bg-vara-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-vara-dark hover:shadow-lg;
+    @apply bg-vara-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 hover:bg-vara-dark hover:shadow-lg hover:shadow-vara-primary/25 transform hover:-translate-y-0.5;
   }
 
   .vara-btn-secondary {
-    @apply bg-transparent text-vara-primary border border-vara-primary px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-vara-accent hover:border-vara-secondary;
+    @apply bg-transparent text-vara-primary border-2 border-vara-primary px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 hover:bg-vara-accent hover:border-vara-secondary hover:shadow-lg;
   }
 
   .industry-card {

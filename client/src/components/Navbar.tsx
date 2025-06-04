@@ -42,23 +42,24 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        "bg-white md:bg-transparent",
-        scrolled && "md:bg-white/90 md:backdrop-blur-lg md:shadow-sm",
-        "py-4" // Consistent padding
+        "bg-white/95 backdrop-blur-md md:bg-transparent border-b border-white/10",
+        scrolled && "md:bg-white/95 md:backdrop-blur-md md:shadow-lg md:border-b md:border-gray-200/20",
+        "py-3 sm:py-4"
       )}
     >
-      <div className="container mx-auto px-4 md:px-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center" onClick={closeMenu}>
-            <span
-              className={cn(
-                "text-2xl font-bold transition-colors",
-                "text-vara-primary md:text-white",
-                scrolled && "md:text-vara-primary"
-              )}
-            >
-              <img src="/logo.png" className="w-full h-[64px]"/>
-            </span>
+          <Link href="/" className="flex items-center group" onClick={closeMenu}>
+            <div className="relative">
+              <img 
+                src="/logo.png" 
+                alt="Vara Global Trading"
+                className={cn(
+                  "h-12 sm:h-14 lg:h-16 w-auto transition-all duration-300 group-hover:scale-105",
+                  scrolled ? "brightness-100" : "md:brightness-0 md:invert"
+                )}
+              />
+            </div>
           </Link>
 
           {/* Desktop Menu */}
@@ -200,15 +201,44 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "fixed inset-0 top-[60px] bg-white z-50 transition-transform duration-300 ease-in-out md:hidden overflow-y-auto max-h-[calc(100vh-60px)]",
+            "fixed inset-0 top-0 bg-white z-40 transition-transform duration-500 ease-out md:hidden",
             isOpen ? "translate-x-0" : "translate-x-full"
           )}
         >
-          <div className="flex flex-col space-y-4 p-4 text-lg">
-            <Link href="/" className={cn("py-2", location === "/" && "font-bold")} onClick={closeMenu}>
+          {/* Mobile Header */}
+          <div className="flex items-center justify-between p-4 border-b border-gray-200">
+            <Link href="/" className="flex items-center" onClick={closeMenu}>
+              <img src="/logo.png" alt="Vara Global Trading" className="h-10 w-auto" />
+            </Link>
+            <button
+              onClick={closeMenu}
+              className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+              aria-label="Close Menu"
+            >
+              <X className="h-6 w-6 text-gray-600" />
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="flex flex-col px-4 py-6 space-y-1">
+            <Link 
+              href="/" 
+              className={cn(
+                "flex items-center py-4 px-4 rounded-xl text-lg font-medium transition-all duration-300",
+                location === "/" ? "bg-vara-accent text-vara-primary" : "text-gray-700 hover:bg-gray-50"
+              )} 
+              onClick={closeMenu}
+            >
               Home
             </Link>
-            <Link href="/about" className={cn("py-2", location === "/about" && "font-bold")} onClick={closeMenu}>
+            <Link 
+              href="/about" 
+              className={cn(
+                "flex items-center py-4 px-4 rounded-xl text-lg font-medium transition-all duration-300",
+                location === "/about" ? "bg-vara-accent text-vara-primary" : "text-gray-700 hover:bg-gray-50"
+              )} 
+              onClick={closeMenu}
+            >
               About Us
             </Link>
             <div className="py-2">
