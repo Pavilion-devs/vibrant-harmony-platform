@@ -154,7 +154,7 @@ const Blog = () => {
                     </div>
                     
                     <Link 
-                      to="#" 
+                      href="#" 
                       className="text-vara-secondary font-medium hover:text-vara-primary transition-colors flex items-center"
                     >
                       Read More <ArrowRight className="ml-1 h-4 w-4" />

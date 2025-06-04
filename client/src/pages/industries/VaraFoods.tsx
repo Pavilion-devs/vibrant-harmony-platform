@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
 import { Check, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface Product {
@@ -129,7 +129,7 @@ const VaraFoods = () => {
                         </div>
                       ))}
                     </div>
-                    <Link to="/products" className="vara-btn-primary inline-flex items-center self-start">
+                    <Link href="/products" className="vara-btn-primary inline-flex items-center self-start">
                       View Details <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </div>

@@ -168,7 +168,7 @@ const ProductsShowcase = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/products" className="vara-btn-primary">
+          <Link href="/products" className="vara-btn-primary">
             View All Products
           </Link>
         </div>

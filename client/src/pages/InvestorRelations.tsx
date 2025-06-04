@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
 import { DownloadCloud, TrendingUp, ChevronRight, FileText } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 
 interface FinancialReport {
   id: number;
@@ -177,7 +177,7 @@ const InvestorRelations = () => {
                     <span>Voting rights on key decisions</span>
                   </li>
                 </ul>
-                <Link to="/contact" className="vara-btn-primary w-full block text-center">
+                <Link href="/contact" className="vara-btn-primary w-full block text-center">
                   Inquire Now
                 </Link>
               </div>
@@ -210,7 +210,7 @@ const InvestorRelations = () => {
                     <span>Active involvement options</span>
                   </li>
                 </ul>
-                <Link to="/contact" className="vara-btn-primary w-full block text-center">
+                <Link href="/contact" className="vara-btn-primary w-full block text-center">
                   Inquire Now
                 </Link>
               </div>
@@ -243,7 +243,7 @@ const InvestorRelations = () => {
                     <span>Lower risk profile</span>
                   </li>
                 </ul>
-                <Link to="/contact" className="vara-btn-primary w-full block text-center">
+                <Link href="/contact" className="vara-btn-primary w-full block text-center">
                   Inquire Now
                 </Link>
               </div>

@@ -3,14 +3,14 @@ import { useLocation, Link } from "wouter";
 import { useEffect } from "react";
 
 const NotFound = () => {
-  const location = useLocation();
+  const [location] = useLocation();
 
   useEffect(() => {
     console.error(
       "404 Error: User attempted to access non-existent route:",
-      location.pathname
+      location
     );
-  }, [location.pathname]);
+  }, [location]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-vara-light p-6">
@@ -21,10 +21,10 @@ const NotFound = () => {
           The page you're looking for doesn't exist or has been moved. Let's get you back on track.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Link to="/" className="vara-btn-primary">
+          <Link href="/" className="vara-btn-primary">
             Return to Homepage
           </Link>
-          <Link to="/contact" className="vara-btn-secondary">
+          <Link href="/contact" className="vara-btn-secondary">
             Contact Support
           </Link>
         </div>

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
 import { Check, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 
 interface Property {
   id: number;
@@ -134,7 +134,7 @@ const VaraRealEstate = () => {
                       </div>
                     ))}
                   </div>
-                  <Link to="/products" className="vara-btn-primary inline-flex items-center">
+                  <Link href="/products" className="vara-btn-primary inline-flex items-center">
                     View Details <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </div>

@@ -49,7 +49,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-12">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center" onClick={closeMenu}>
+          <Link href="/" className="flex items-center" onClick={closeMenu}>
             <span
               className={cn(
                 "text-2xl font-bold transition-colors",
@@ -107,25 +107,25 @@ const Navbar = () => {
               >
                 <div className="py-1">
                   <Link
-                    to="/industries/foods"
+                    href="/industries/foods"
                     className="block px-4 py-2 text-sm text-vara-primary hover:bg-vara-accent"
                   >
                     Vara Foods
                   </Link>
                   <Link
-                    to="/industries/electronics"
+                    href="/industries/electronics"
                     className="block px-4 py-2 text-sm text-vara-primary hover:bg-vara-accent"
                   >
                     Vara Electronics
                   </Link>
                   <Link
-                    to="/industries/real-estate"
+                    href="/industries/real-estate"
                     className="block px-4 py-2 text-sm text-vara-primary hover:bg-vara-accent"
                   >
                     Vara Real Estate
                   </Link>
                   <Link
-                    to="/industries"
+                    href="/industries"
                     className="block px-4 py-2 text-sm text-vara-secondary hover:bg-vara-accent"
                   >
                     View All Industries
@@ -231,28 +231,28 @@ const Navbar = () => {
                 )}
               >
                 <Link
-                  to="/industries/foods"
+                  href="/industries/foods"
                   className="block py-1"
                   onClick={closeMenu}
                 >
                   Vara Foods
                 </Link>
                 <Link
-                  to="/industries/electronics"
+                  href="/industries/electronics"
                   className="block py-1"
                   onClick={closeMenu}
                 >
                   Vara Electronics
                 </Link>
                 <Link
-                  to="/industries/real-estate"
+                  href="/industries/real-estate"
                   className="block py-1"
                   onClick={closeMenu}
                 >
                   Vara Real Estate
                 </Link>
                 <Link
-                  to="/industries"
+                  href="/industries"
                   className="block py-1 text-vara-secondary"
                   onClick={closeMenu}
                 >

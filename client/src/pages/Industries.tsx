@@ -39,7 +39,7 @@ const Industries = () => {
                   With a focus on sustainable agriculture and rigorous quality control, we ensure that our products meet the highest standards of safety and nutrition.
                 </p>
                 <Link 
-                  to="/industries/foods" 
+                  href="/industries/foods" 
                   className="vara-btn-primary inline-flex items-center"
                 >
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -76,7 +76,7 @@ const Industries = () => {
                   Our product range includes energy-efficient refrigerators, smart home systems, and other devices that combine cutting-edge technology with user-friendly design.
                 </p>
                 <Link 
-                  to="/industries/electronics" 
+                  href="/industries/electronics" 
                   className="vara-btn-primary inline-flex items-center"
                 >
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />

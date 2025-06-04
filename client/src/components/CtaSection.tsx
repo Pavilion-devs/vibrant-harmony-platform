@@ -22,10 +22,10 @@ const CtaSection = () => {
             Join us in our mission to deliver quality products and services that improve lives across Africa. Let's create something exceptional together.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/products" className="vara-btn-primary bg-white text-vara-primary hover:bg-gray-100">
+            <Link href="/products" className="vara-btn-primary bg-white text-vara-primary hover:bg-gray-100">
               Explore Our Products
             </Link>
-            <Link to="/contact" className="vara-btn-secondary text-white border-white hover:bg-white/10">
+            <Link href="/contact" className="vara-btn-secondary text-white border-white hover:bg-white/10">
               Contact Us <ArrowRight className="ml-2 h-4 w-4 inline" />
             </Link>
           </div>
