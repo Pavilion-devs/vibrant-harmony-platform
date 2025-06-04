@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -7,6 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [industryDropdownOpen, setIndustryDropdownOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,24 +63,26 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <NavLink
-              to="/"
+            <Link
+              href="/"
               className={cn(
                 "nav-link",
-                scrolled ? "text-foreground/80" : "text-white"
+                scrolled ? "text-foreground/80" : "text-white",
+                location === "/" && "font-bold"
               )}
             >
               Home
-            </NavLink>
-            <NavLink
-              to="/about"
+            </Link>
+            <Link
+              href="/about"
               className={cn(
                 "nav-link",
-                scrolled ? "text-foreground/80" : "text-white"
+                scrolled ? "text-foreground/80" : "text-white",
+                location === "/about" && "font-bold"
               )}
             >
               About Us
-            </NavLink>
+            </Link>
             <div className="relative group">
               <button
                 className={cn(
@@ -130,51 +133,56 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <NavLink
-              to="/products"
+            <Link
+              href="/products"
               className={cn(
                 "nav-link",
-                scrolled ? "text-foreground/80" : "text-white"
+                scrolled ? "text-foreground/80" : "text-white",
+                location === "/products" && "font-bold"
               )}
             >
               Products
-            </NavLink>
-            {/* <NavLink
-              to="/investors"
+            </Link>
+            {/* <Link
+              href="/investors"
               className={cn(
                 "nav-link",
-                scrolled ? "text-foreground/80" : "text-white"
+                scrolled ? "text-foreground/80" : "text-white",
+                location === "/investors" && "font-bold"
               )}
             >
               Investors
-            </NavLink> */}
-            <NavLink
-              to="/careers"
+            </Link> */}
+            <Link
+              href="/careers"
               className={cn(
                 "nav-link",
-                scrolled ? "text-foreground/80" : "text-white"
+                scrolled ? "text-foreground/80" : "text-white",
+                location === "/careers" && "font-bold"
               )}
             >
               Careers
-            </NavLink>
-            <NavLink
-              to="/contact"
+            </Link>
+            <Link
+              href="/contact"
               className={cn(
                 "nav-link",
-                scrolled ? "text-foreground/80" : "text-white"
+                scrolled ? "text-foreground/80" : "text-white",
+                location === "/contact" && "font-bold"
               )}
             >
               Contact
-            </NavLink>
-            {/* <NavLink
-              to="/blog"
+            </Link>
+            {/* <Link
+              href="/blog"
               className={cn(
                 "nav-link",
-                scrolled ? "text-foreground/80" : "text-white"
+                scrolled ? "text-foreground/80" : "text-white",
+                location === "/blog" && "font-bold"
               )}
             >
               Blog
-            </NavLink> */}
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -197,12 +205,12 @@ const Navbar = () => {
           )}
         >
           <div className="flex flex-col space-y-4 p-4 text-lg">
-            <NavLink to="/" className="py-2" onClick={closeMenu}>
+            <Link href="/" className={cn("py-2", location === "/" && "font-bold")} onClick={closeMenu}>
               Home
-            </NavLink>
-            <NavLink to="/about" className="py-2" onClick={closeMenu}>
+            </Link>
+            <Link href="/about" className={cn("py-2", location === "/about" && "font-bold")} onClick={closeMenu}>
               About Us
-            </NavLink>
+            </Link>
             <div className="py-2">
               <button
                 className="flex items-center justify-between w-full"
@@ -252,24 +260,24 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <NavLink to="/products" className="py-2" onClick={closeMenu}>
+            <Link href="/products" className={cn("py-2", location === "/products" && "font-bold")} onClick={closeMenu}>
               Products
-            </NavLink>
-            <NavLink to="/investors" className="py-2" onClick={closeMenu}>
+            </Link>
+            <Link href="/investors" className={cn("py-2", location === "/investors" && "font-bold")} onClick={closeMenu}>
               Investors
-            </NavLink>
-            <NavLink to="/careers" className="py-2" onClick={closeMenu}>
+            </Link>
+            <Link href="/careers" className={cn("py-2", location === "/careers" && "font-bold")} onClick={closeMenu}>
               Careers
-            </NavLink>
-            <NavLink to="/contact" className="py-2" onClick={closeMenu}>
+            </Link>
+            <Link href="/contact" className={cn("py-2", location === "/contact" && "font-bold")} onClick={closeMenu}>
               Contact
-            </NavLink>
-            <NavLink to="/blog" className="py-2" onClick={closeMenu}>
+            </Link>
+            <Link href="/blog" className={cn("py-2", location === "/blog" && "font-bold")} onClick={closeMenu}>
               Blog
-            </NavLink>
+            </Link>
             <div className="pt-4">
               <Link
-                to="/contact"
+                href="/contact"
                 className="vara-btn-primary block text-center"
                 onClick={closeMenu}
               >

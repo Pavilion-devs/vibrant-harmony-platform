@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Router, Route, Switch } from "wouter";
 import Index from "./pages/Index";
 import AboutUs from "./pages/AboutUs";
 import Industries from "./pages/Industries";
@@ -24,22 +24,22 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/industries" element={<Industries />} />
-          <Route path="/industries/foods" element={<VaraFoods />} />
-          <Route path="/industries/electronics" element={<VaraElectronics />} />
-          <Route path="/industries/real-estate" element={<VaraRealEstate />} />
-          <Route path="/products" element={<ProductsServices />} />
-          <Route path="/investors" element={<InvestorRelations />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Router>
+        <Switch>
+          <Route path="/" component={Index} />
+          <Route path="/about" component={AboutUs} />
+          <Route path="/industries" component={Industries} />
+          <Route path="/industries/foods" component={VaraFoods} />
+          <Route path="/industries/electronics" component={VaraElectronics} />
+          <Route path="/industries/real-estate" component={VaraRealEstate} />
+          <Route path="/products" component={ProductsServices} />
+          <Route path="/investors" component={InvestorRelations} />
+          <Route path="/careers" component={Careers} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/blog" component={Blog} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
     </TooltipProvider>
   </QueryClientProvider>
 );
