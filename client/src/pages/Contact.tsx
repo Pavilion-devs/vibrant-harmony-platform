@@ -13,8 +13,8 @@ const Contact = () => {
     <Layout>
       <PageHeader
         title="Contact Us"
-        subtitle="Get in touch with our team for inquiries, partnerships, or support"
-        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=1920"
+        subtitle="Connect with Africa's premier trading company for partnerships and inquiries"
+        image="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=1600"
       />
 
       <section className="py-20 md:px-12">

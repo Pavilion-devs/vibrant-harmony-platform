@@ -14,8 +14,8 @@ const AboutUs = () => {
     <Layout>
       <PageHeader
         title="About Vara Group"
-        subtitle="A legacy of excellence, innovation, and community impact"
-        image="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1920"
+        subtitle="A legacy of excellence, innovation, and community impact across Africa"
+        image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600"
       />
 
       <section className="py-20 md:px-12">

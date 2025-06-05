@@ -175,8 +175,8 @@ const ProductsServices = () => {
     <Layout>
       <PageHeader
         title="Products & Services"
-        subtitle="Explore our complete catalog of quality products across all divisions"
-        image="https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?auto=format&fit=crop&q=80&w=1920"
+        subtitle="Premium quality products across Foods, Electronics, and Real Estate throughout Africa"
+        image="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1600"
       />
 
       <section className="py-20 px-4 md:px-12">

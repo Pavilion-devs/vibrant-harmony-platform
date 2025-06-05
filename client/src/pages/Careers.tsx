@@ -100,8 +100,8 @@ const Careers = () => {
     <Layout>
       <PageHeader
         title="Join Our Team"
-        subtitle="Discover career opportunities across the Vara Global Trading family of companies"
-        image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1920"
+        subtitle="Build your career with Africa's leading diversified trading company"
+        image="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80&w=1600"
       />
 
       <section className="py-20 md:px-12">
