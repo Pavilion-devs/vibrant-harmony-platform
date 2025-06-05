@@ -140,11 +140,11 @@ const HeroCarousel = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                  <Link href="/industries" className="group vara-btn-primary bg-vara-secondary hover:bg-vara-secondary/90 transform hover:scale-105 transition-all duration-300">
+                  <Link href="/industries" className="group vara-btn-primary bg-vara-secondary hover:bg-vara-secondary/90 transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center">
                     <span>Explore Our Industries</span>
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  <Link href="/contact" className="group vara-btn-secondary bg-white/10 text-white border-white/40 hover:bg-white/20 backdrop-blur-sm">
+                  <Link href="/contact" className="group vara-btn-secondary bg-white/10 text-white border-white/40 hover:bg-white/20 backdrop-blur-sm inline-flex items-center justify-center">
                     <Play className="mr-2 h-5 w-5" />
                     <span>Partner With Us</span>
                   </Link>
