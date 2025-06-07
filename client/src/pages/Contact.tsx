@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
@@ -14,7 +13,7 @@ const Contact = () => {
       <PageHeader
         title="Contact Us"
         subtitle="Connect with Africa's premier trading company for partnerships and inquiries"
-        image="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=1600"
+        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=1600"
       />
 
       <section className="py-20 md:px-12">
@@ -35,7 +34,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">
                 For general inquiries and information about our products and services.
               </p>
-              <a href="mailto:info@varatrading.com" className="text-vara-primary font-medium hover:underline">info@varatrading.com</a>
+              <a href="mailto:info@varatrading.com" className="text-vara-primary font-medium hover:underline">sales@varatrading.com</a>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm text-center">
@@ -46,7 +45,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">
                 Speak directly with our customer service team during business hours.
               </p>
-              <a href="tel:+2341234567890" className="text-vara-primary font-medium hover:underline">+234 (0) 123 456 7890</a>
+              <a href="tel:+2341234567890" className="text-vara-primary font-medium hover:underline">+234 (0) 916  000 2934</a>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm text-center">
@@ -57,7 +56,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">
                 Get instant assistance through our WhatsApp business account.
               </p>
-              <a href="https://wa.me/2341234567890" className="text-vara-primary font-medium hover:underline">+234 (0) 123 456 7890</a>
+              <a href="https://wa.me/2341234567890" className="text-vara-primary font-medium hover:underline">+234 (0) 916 000 2934</a>
             </div>
           </div>
 
@@ -165,7 +164,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="py-20 md:px-12 bg-vara-light">
+      {/* <section className="py-20 md:px-12 bg-vara-light">
         <div className="px-4">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Department Contacts</h2>
@@ -266,7 +265,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };

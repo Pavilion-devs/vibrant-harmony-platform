@@ -119,7 +119,7 @@ const products: Product[] = [
   {
     id: 13,
     name: "PMS (Petrol Motor Spirit)",
-    image: "https://images.unsplash.com/photo-1545262811-8e4ab5ac6ead?auto=format&fit=crop&q=80&w=600",
+    image: "/pms.png",
     category: "trading",
     description: "High-quality petrol suitable for all types of vehicles, ensuring smooth performance and efficiency.",
     certifications: ["International Standards", "Quality Assured"]
@@ -127,7 +127,7 @@ const products: Product[] = [
   {
     id: 14,
     name: "AGO (Automotive Gas Oil)",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=600",
+    image: "/engine.png",
     category: "trading",
     description: "Diesel fuel designed for commercial vehicles and industrial machinery, meeting all industry standards.",
     certifications: ["Industry Standards", "Quality Control"]
@@ -135,7 +135,7 @@ const products: Product[] = [
   {
     id: 15,
     name: "Jet A-1",
-    image: "https://images.unsplash.com/photo-1544963850-6ad54ceac834?auto=format&fit=crop&q=80&w=600",
+    image: "/aviation.png",
     category: "trading",
     description: "Aviation turbine fuel that meets international quality standards, ensuring safety and reliability for aircraft operations.",
     certifications: ["Aviation Grade", "International Standards"]

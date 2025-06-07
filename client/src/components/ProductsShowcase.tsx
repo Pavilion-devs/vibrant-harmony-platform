@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "wouter";
 import { cn } from "@/lib/utils";
@@ -48,7 +47,7 @@ const products: Product[] = [
   {
     id: 5,
     name: "PMS (Petrol Motor Spirit)",
-    image: "https://images.unsplash.com/photo-1545262811-8e4ab5ac6ead?auto=format&fit=crop&q=80&w=600",
+    image: "/pms.png",
     category: "trading",
     description: "High-quality petrol suitable for all types of vehicles, ensuring smooth performance and efficiency.",
     link: "/products#pms",
@@ -56,7 +55,7 @@ const products: Product[] = [
   {
     id: 6,
     name: "AGO (Automotive Gas Oil)",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=600",
+    image: "/engine.png",
     category: "trading",
     description: "Diesel fuel designed for commercial vehicles and industrial machinery, meeting all industry standards.",
     link: "/products#ago",

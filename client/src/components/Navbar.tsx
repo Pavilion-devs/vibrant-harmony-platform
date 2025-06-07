@@ -224,7 +224,7 @@ const Navbar = () => {
             <Link 
               href="/" 
               className={cn(
-                "flex items-center py-4 px-4 rounded-xl text-lg font-medium transition-all duration-300",
+                "flex items-center py-4 px-4 rounded-xl text-base font-medium transition-all duration-300",
                 location === "/" ? "bg-vara-accent text-vara-primary" : "text-gray-700 hover:bg-gray-50"
               )} 
               onClick={closeMenu}
@@ -234,7 +234,7 @@ const Navbar = () => {
             <Link 
               href="/about" 
               className={cn(
-                "flex items-center py-4 px-4 rounded-xl text-lg font-medium transition-all duration-300",
+                "flex items-center py-4 px-4 rounded-xl text-base font-medium transition-all duration-300",
                 location === "/about" ? "bg-vara-accent text-vara-primary" : "text-gray-700 hover:bg-gray-50"
               )} 
               onClick={closeMenu}
@@ -243,7 +243,7 @@ const Navbar = () => {
             </Link>
             <div className="py-2">
               <button
-                className="flex items-center justify-between w-full"
+                className="flex items-center justify-between w-full py-4 px-4 rounded-xl text-base font-medium text-gray-700 hover:bg-gray-50 transition-all duration-300"
                 onClick={() => setIndustryDropdownOpen(!industryDropdownOpen)}
               >
                 Industries{" "}
@@ -262,48 +262,63 @@ const Navbar = () => {
               >
                 <Link
                   href="/industries/foods"
-                  className="block py-1"
+                  className="block py-3 px-4 text-sm text-gray-600 hover:text-vara-primary transition-colors"
                   onClick={closeMenu}
                 >
                   Vara Foods
                 </Link>
                 <Link
                   href="/industries/electronics"
-                  className="block py-1"
+                  className="block py-3 px-4 text-sm text-gray-600 hover:text-vara-primary transition-colors"
                   onClick={closeMenu}
                 >
                   Vara Electronics
                 </Link>
                 <Link
                   href="/industries/real-estate"
-                  className="block py-1"
+                  className="block py-3 px-4 text-sm text-gray-600 hover:text-vara-primary transition-colors"
                   onClick={closeMenu}
                 >
                   Vara Real Estate
                 </Link>
                 <Link
                   href="/industries"
-                  className="block py-1 text-vara-secondary"
+                  className="block py-3 px-4 text-sm text-vara-secondary hover:text-vara-primary transition-colors"
                   onClick={closeMenu}
                 >
                   View All Industries
                 </Link>
               </div>
             </div>
-            <Link href="/products" className={cn("py-2", location === "/products" && "font-bold")} onClick={closeMenu}>
+            <Link 
+              href="/products" 
+              className={cn(
+                "flex items-center py-4 px-4 rounded-xl text-base font-medium transition-all duration-300",
+                location === "/products" ? "bg-vara-accent text-vara-primary" : "text-gray-700 hover:bg-gray-50"
+              )} 
+              onClick={closeMenu}
+            >
               Products
             </Link>
-            <Link href="/investors" className={cn("py-2", location === "/investors" && "font-bold")} onClick={closeMenu}>
-              Investors
-            </Link>
-            <Link href="/careers" className={cn("py-2", location === "/careers" && "font-bold")} onClick={closeMenu}>
+            <Link 
+              href="/careers" 
+              className={cn(
+                "flex items-center py-4 px-4 rounded-xl text-base font-medium transition-all duration-300",
+                location === "/careers" ? "bg-vara-accent text-vara-primary" : "text-gray-700 hover:bg-gray-50"
+              )} 
+              onClick={closeMenu}
+            >
               Careers
             </Link>
-            <Link href="/contact" className={cn("py-2", location === "/contact" && "font-bold")} onClick={closeMenu}>
+            <Link 
+              href="/contact" 
+              className={cn(
+                "flex items-center py-4 px-4 rounded-xl text-base font-medium transition-all duration-300",
+                location === "/contact" ? "bg-vara-accent text-vara-primary" : "text-gray-700 hover:bg-gray-50"
+              )} 
+              onClick={closeMenu}
+            >
               Contact
-            </Link>
-            <Link href="/blog" className={cn("py-2", location === "/blog" && "font-bold")} onClick={closeMenu}>
-              Blog
             </Link>
             <div className="pt-4">
               <Link
