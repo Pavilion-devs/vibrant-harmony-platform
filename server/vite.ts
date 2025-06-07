@@ -23,7 +23,7 @@ export async function setupVite(app: Express, server: Server) {
   const serverOptions = {
     middlewareMode: true,
     hmr: { server },
-    allowedHosts: true,
+    allowedHosts: true as const,
   };
 
   const vite = await createViteServer({
@@ -68,14 +68,29 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(import.meta.dirname, "public");
+  // Try multiple possible paths for the built client files
+  const possiblePaths = [
+    path.resolve(import.meta.dirname, "..", "dist", "public"),
+    path.resolve(import.meta.dirname, "public"),
+    path.resolve(process.cwd(), "dist", "public"),
+    path.resolve("dist", "public")
+  ];
+  
+  let distPath = "";
+  for (const testPath of possiblePaths) {
+    if (fs.existsSync(testPath)) {
+      distPath = testPath;
+      break;
+    }
+  }
 
-  if (!fs.existsSync(distPath)) {
+  if (!distPath) {
     throw new Error(
-      `Could not find the build directory: ${distPath}, make sure to build the client first`,
+      `Could not find the build directory. Tried: ${possiblePaths.join(", ")}`,
     );
   }
 
+  console.log(`Serving static files from: ${distPath}`);
   app.use(express.static(distPath));
 
   // fall through to index.html if the file doesn't exist

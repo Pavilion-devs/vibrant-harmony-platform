@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["dist/**", "client/public/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/index.js"
+    }
+  ],
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "startCommand": "npm run start",
+  "functions": {
+    "dist/index.js": {
+      "includeFiles": "dist/public/**"
+    }
+  }
+} 

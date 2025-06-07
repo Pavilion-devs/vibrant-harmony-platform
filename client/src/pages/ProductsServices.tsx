@@ -143,7 +143,7 @@ const products: Product[] = [
   {
     id: 16,
     name: "DPK (Dual Purpose Kerosene)",
-    image: "https://images.unsplash.com/photo-1545262811-8e4ab5ac6ead?auto=format&fit=crop&q=80&w=600",
+    image: "/kerosene.png",
     category: "trading",
     description: "Versatile kerosene used for lighting, heating, and industrial applications.",
     certifications: ["Multi-Purpose", "Quality Certified"]
@@ -151,7 +151,7 @@ const products: Product[] = [
   {
     id: 17,
     name: "LPG (Liquefied Petroleum Gas)",
-    image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&q=80&w=600",
+    image: "/gas.png",
     category: "trading",
     description: "Clean-burning fuel used in residential, commercial, and industrial sectors for cooking and heating.",
     certifications: ["Clean Energy", "Safety Standards"]
