@@ -1,9 +1,26 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const UnderConstruction = () => {
+  const [logoClicks, setLogoClicks] = useState(0);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Reset clicks after 5 seconds of inactivity
+  useEffect(() => {
+    if (logoClicks > 0) {
+      const timer = setTimeout(() => setLogoClicks(0), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [logoClicks]);
+
+  const handleLogoClick = () => {
+    setLogoClicks(prev => prev + 1);
+    if (logoClicks + 1 >= 5) {
+      window.location.href = "/dev-access";
+    }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vara-light to-white p-6">
@@ -13,8 +30,15 @@ const UnderConstruction = () => {
           <img 
             src="/logo.png" 
             alt="Vara Global Trading" 
-            className="h-20 md:h-24 w-auto mx-auto"
+            className="h-20 md:h-24 w-auto mx-auto cursor-pointer transition-transform hover:scale-105"
+            onClick={handleLogoClick}
+            title={logoClicks > 0 ? `${5 - logoClicks} more clicks...` : ""}
           />
+          {logoClicks > 2 && (
+            <p className="text-xs text-gray-400 mt-2">
+              {5 - logoClicks} more clicks for developer access...
+            </p>
+          )}
         </div>
         
         {/* Main Content */}
