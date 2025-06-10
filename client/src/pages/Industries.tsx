@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
@@ -14,29 +13,29 @@ const Industries = () => {
     <Layout>
       <PageHeader
         title="Our Industries"
-        subtitle="Explore our diverse business portfolio across key sectors"
-        image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1920"
+        subtitle="Diverse sectors enhancing lives across Africa"
+        image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920"
       />
 
       <section className="py-20 px-4 md:px-12">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="section-title mb-4">Driving Innovation Across Sectors</h2>
+            <h2 className="section-title mb-4">Industry Sectors</h2>
             <p className="section-subtitle mx-auto">
-              Our diverse portfolio of businesses is united by a commitment to quality, innovation, and positive impact.
+              From essential foods to innovative electronics and energy solutions, we serve diverse markets with quality and integrity.
             </p>
           </div>
 
-          <div className="space-y-16">
+          <div className="space-y-20">
             {/* Vara Foods */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="heading-underline text-3xl font-semibold mb-6 text-vara-primary">Vara Foods</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  Our food division is dedicated to providing high-quality, nutritious staple foods to households across Africa. We specialize in rice, tomato paste, and a variety of spices that enhance the flavors of everyday meals.
+                  Established in 2005, Vara Foods is dedicated to providing high-quality staple foods that form the foundation of nutritious meals in homes across Africa.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
-                  With a focus on sustainable agriculture and rigorous quality control, we ensure that our products meet the highest standards of safety and nutrition.
+                  Our commitment to quality begins with careful sourcing of raw materials, continues through our state-of-the-art processing facilities, and extends to our rigorous quality control measures.
                 </p>
                 <Link 
                   href="/industries/foods" 
@@ -84,26 +83,116 @@ const Industries = () => {
               </div>
             </div>
 
-            {/* Vara Trading */}
+            {/* Vara Oil & Gas */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <h2 className="heading-underline text-3xl font-semibold mb-6 text-vara-primary">About Us</h2>
+                <h2 className="heading-underline text-3xl font-semibold mb-6 text-vara-primary">Vara Oil & Gas</h2>
                 <p className="text-lg text-gray-700 mb-6">
                   Vara Trading is a premier commodities trading company specializing in the procurement and distribution of petroleum products. We lift fuel directly from the largest refineries as well as several smaller ones, ensuring access to high-quality products at competitive prices.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
                   Committed to quality, reliability, and customer satisfaction, we serve clients across various industries, providing timely delivery of our products including PMS, AGO, Jet A-1, DPK, and LPG.
                 </p>
+                <Link 
+                  href="/industries/oil-gas" 
+                  className="vara-btn-primary inline-flex items-center"
+                >
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </div>
               <div className="order-1 lg:order-2">
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <img 
                     src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=800" 
-                    alt="Vara Trading" 
+                    alt="Vara Oil & Gas" 
                     className="w-full h-auto"
                   />
                 </div>
               </div>
+            </div>
+
+            {/* Vara Real Estate */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" 
+                    alt="Vara Real Estate" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div>
+                <h2 className="heading-underline text-3xl font-semibold mb-6 text-vara-primary">Vara Real Estate</h2>
+                <p className="text-lg text-gray-700 mb-6">
+                  Vara Real Estate focuses on developing sustainable residential and commercial properties that meet the evolving needs of modern communities.
+                </p>
+                <p className="text-lg text-gray-700 mb-6">
+                  Our projects emphasize quality construction, environmental responsibility, and thoughtful design to create spaces where people can live, work, and thrive.
+                </p>
+                <Link 
+                  href="/industries/real-estate" 
+                  className="vara-btn-primary inline-flex items-center"
+                >
+                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Overview Section */}
+      <section className="py-20 px-4 md:px-12 bg-vara-light">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">Why Choose Vara Global Trading</h2>
+            <p className="section-subtitle mx-auto">
+              Our commitment to excellence across all sectors drives sustainable growth and meaningful impact.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div className="bg-vara-accent h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/1147/1147832.png" 
+                  alt="Quality" 
+                  className="h-8 w-8"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-vara-primary">Quality Excellence</h3>
+              <p className="text-gray-600">
+                Rigorous quality standards across all our industries ensure customers receive premium products and services.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div className="bg-vara-accent h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" 
+                  alt="Innovation" 
+                  className="h-8 w-8"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-vara-primary">Innovation & Technology</h3>
+              <p className="text-gray-600">
+                Embracing cutting-edge technology and innovative solutions to stay ahead in dynamic markets.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div className="bg-vara-accent h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <img 
+                  src="https://cdn-icons-png.flaticon.com/512/2822/2822788.png" 
+                  alt="Sustainability" 
+                  className="h-8 w-8"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-vara-primary">Sustainable Practices</h3>
+              <p className="text-gray-600">
+                Environmental responsibility and sustainable business practices are at the core of our operations.
+              </p>
             </div>
           </div>
         </div>

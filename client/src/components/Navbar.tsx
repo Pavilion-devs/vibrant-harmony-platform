@@ -126,6 +126,12 @@ const Navbar = () => {
                     Vara Real Estate
                   </Link>
                   <Link
+                    href="/industries/oil-gas"
+                    className="block px-4 py-2 text-sm text-vara-primary hover:bg-vara-accent"
+                  >
+                    Vara Oil & Gas
+                  </Link>
+                  <Link
                     href="/industries"
                     className="block px-4 py-2 text-sm text-vara-secondary hover:bg-vara-accent"
                   >
@@ -281,6 +287,12 @@ const Navbar = () => {
                 >
                   Vara Real Estate
                 </Link>
+                <Link
+                    href="/industries/oil-gas"
+                    className="block px-4 py-2 text-sm text-vara-primary hover:bg-vara-accent"
+                  >
+                    Vara Oil & Gas
+                  </Link>
                 <Link
                   href="/industries"
                   className="block py-3 px-4 text-sm text-vara-secondary hover:text-vara-primary transition-colors"

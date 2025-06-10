@@ -12,7 +12,7 @@ const DevAccess = ({ onAuthenticated }: DevAccessProps) => {
   const [loading, setLoading] = useState(false);
 
   // You can change this password - keep it simple but secure enough
-  const DEV_PASSWORD = "vara2024dev";
+  const DEV_PASSWORD = "vara2024";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

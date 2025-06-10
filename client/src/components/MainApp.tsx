@@ -10,6 +10,7 @@ import Blog from "../pages/Blog";
 import VaraFoods from "../pages/industries/VaraFoods";
 import VaraElectronics from "../pages/industries/VaraElectronics";
 import VaraRealEstate from "../pages/industries/VaraRealEstate";
+import VaraOilGas from "../pages/industries/VaraOilGas";
 import NotFound from "../pages/NotFound";
 import DevLogout from "./DevLogout";
 
@@ -29,6 +30,7 @@ const MainApp = ({ onLogout }: MainAppProps) => {
           <Route path="/industries/foods" component={VaraFoods} />
           <Route path="/industries/electronics" component={VaraElectronics} />
           <Route path="/industries/real-estate" component={VaraRealEstate} />
+          <Route path="/industries/oil-gas" component={VaraOilGas} />
           <Route path="/products" component={ProductsServices} />
           <Route path="/investors" component={InvestorRelations} />
           <Route path="/careers" component={Careers} />
