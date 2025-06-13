@@ -10,7 +10,7 @@ interface Slide {
   title: string;
   subtitle: string;
   highlight: string;
-  stats: Array<{ label: string; value: string; icon: any }>;
+  // stats: Array<{ label: string; value: string; icon: any }>;
 }
 
 const slides: Slide[] = [
@@ -20,11 +20,11 @@ const slides: Slide[] = [
     title: "Empowering Lives Through Quality",
     subtitle: "Leading trading company delivering excellence across Foods, Electronics, and Real Estate throughout Africa",
     highlight: "Quality & Innovation",
-    stats: [
-      { label: "Countries Served", value: "15+", icon: Globe },
-      { label: "Happy Customers", value: "10K+", icon: Users },
-      { label: "Growth Rate", value: "150%", icon: TrendingUp }
-    ],
+    // stats: [
+    //   { label: "Countries Served", value: "15+", icon: Globe },
+    //   { label: "Happy Customers", value: "10K+", icon: Users },
+    //   { label: "Growth Rate", value: "150%", icon: TrendingUp }
+    // ],
   },
   {
     id: 2,
@@ -32,11 +32,11 @@ const slides: Slide[] = [
     title: "Premium Food Products",
     subtitle: "Sourcing and distributing the finest rice, spices, and food essentials to nourish communities across Africa",
     highlight: "Vara Foods",
-    stats: [
-      { label: "Product Lines", value: "50+", icon: Globe },
-      { label: "Families Fed", value: "100K+", icon: Users },
-      { label: "Quality Score", value: "99%", icon: TrendingUp }
-    ],
+    // stats: [
+    //   { label: "Product Lines", value: "50+", icon: Globe },
+    //   { label: "Families Fed", value: "100K+", icon: Users },
+    //   { label: "Quality Score", value: "99%", icon: TrendingUp }
+    // ],
   },
   {
     id: 3,
@@ -44,11 +44,11 @@ const slides: Slide[] = [
     title: "Smart Electronics",
     subtitle: "Cutting-edge appliances and technology solutions designed for modern African homes and businesses",
     highlight: "Vara Electronics",
-    stats: [
-      { label: "Tech Products", value: "200+", icon: Globe },
-      { label: "Homes Connected", value: "25K+", icon: Users },
-      { label: "Energy Saved", value: "40%", icon: TrendingUp }
-    ],
+    // stats: [
+    //   { label: "Tech Products", value: "200+", icon: Globe },
+    //   { label: "Homes Connected", value: "25K+", icon: Users },
+    //   { label: "Energy Saved", value: "40%", icon: TrendingUp }
+    // ],
   },
   {
     id: 4,
@@ -56,11 +56,11 @@ const slides: Slide[] = [
     title: "Real Estate Excellence",
     subtitle: "Developing sustainable communities and commercial spaces that shape the future of African urban living",
     highlight: "Vara Real Estate",
-    stats: [
-      { label: "Projects", value: "30+", icon: Globe },
-      { label: "Sq Ft Developed", value: "2M+", icon: Users },
-      { label: "ROI Average", value: "25%", icon: TrendingUp }
-    ],
+    // stats: [
+    //   { label: "Projects", value: "30+", icon: Globe },
+    //   { label: "Sq Ft Developed", value: "2M+", icon: Users },
+    //   { label: "ROI Average", value: "25%", icon: TrendingUp }
+    // ],
   },
 ];
 
@@ -151,7 +151,7 @@ const HeroCarousel = () => {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-4 sm:gap-6">
+                {/* <div className="grid grid-cols-3 gap-4 sm:gap-6">
                   {currentSlideData.stats.map((stat, index) => {
                     const IconComponent = stat.icon;
                     return (
@@ -166,7 +166,7 @@ const HeroCarousel = () => {
                       </div>
                     );
                   })}
-                </div>
+                </div> */}
               </div>
             </div>
 
