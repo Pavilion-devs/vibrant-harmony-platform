@@ -112,11 +112,11 @@ const VaraFoods = () => {
                 <div className={`grid grid-cols-1 ${index % 2 !== 0 ? 'lg:grid-cols-2 lg:flex-row-reverse' : 'lg:grid-cols-2'}`}>
                   <div className={`${index % 2 !== 0 ? 'order-1 lg:order-2' : ''}`}>
                     <div className="h-64 sm:h-80 lg:h-96 w-full">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-cover"
-                      />
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover"
+                    />
                     </div>
                   </div>
                   <div className={`p-8 flex flex-col justify-center ${index % 2 !== 0 ? 'order-2 lg:order-1' : ''}`}>

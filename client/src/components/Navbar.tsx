@@ -113,11 +113,17 @@ const Navbar = () => {
                   >
                     Vara Foods
                   </Link>
-                  <Link
+                  {/* <Link
                     href="/industries/electronics"
                     className="block px-4 py-2 text-sm text-vara-primary hover:bg-vara-accent"
                   >
                     Vara Electronics
+                  </Link> */}
+                  <Link
+                    href="/industries/lab-supplies"
+                    className="block px-4 py-2 text-sm text-vara-primary hover:bg-vara-accent"
+                  >
+                    Vara Lab Supplies
                   </Link>
                   <Link
                     href="/industries/real-estate"
@@ -273,13 +279,21 @@ const Navbar = () => {
                 >
                   Vara Foods
                 </Link>
-                <Link
+                {/* <Link
                   href="/industries/electronics"
                   className="block py-3 px-4 text-sm text-gray-600 hover:text-vara-primary transition-colors"
                   onClick={closeMenu}
                 >
                   Vara Electronics
+                </Link> */}
+                <Link
+                  href="/industries/lab-supplies"
+                  className="block py-3 px-4 text-sm text-gray-600 hover:text-vara-primary transition-colors"
+                  onClick={closeMenu}
+                >
+                  Vara Lab Supplies
                 </Link>
+                
                 <Link
                   href="/industries/real-estate"
                   className="block py-3 px-4 text-sm text-gray-600 hover:text-vara-primary transition-colors"

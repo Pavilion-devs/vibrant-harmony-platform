@@ -1,7 +1,6 @@
 
 interface Milestone {
   id: number;
-  year: string;
   title: string;
   description: string;
 }
@@ -9,31 +8,26 @@ interface Milestone {
 const milestones: Milestone[] = [
   {
     id: 1,
-    year: "2005",
     title: "Company Founded",
     description: "Vara Global Trading established with a focus on food distribution."
   },
   {
     id: 2,
-    year: "2010",
     title: "Expansion into Electronics",
     description: "Launch of the electronics division, bringing innovative home appliances to the market."
   },
   {
     id: 3,
-    year: "2015",
     title: "Real Estate Division",
     description: "Entry into the real estate sector with our first housing development project."
   },
   {
     id: 4,
-    year: "2018",
     title: "International Expansion",
     description: "Opening of regional offices across West Africa."
   },
   {
     id: 5,
-    year: "2022",
     title: "Sustainable Initiatives",
     description: "Launch of eco-friendly product lines and sustainable building practices."
   }

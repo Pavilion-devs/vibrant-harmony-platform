@@ -45,10 +45,10 @@ const App = () => {
   };
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
         
         {/* Show dev access page if triggered */}
         {showDevAccess && (
@@ -62,13 +62,13 @@ const App = () => {
         
         {/* Show under construction for everyone else */}
         {!isDevMode && !showDevAccess && (
-          <Router>
+      <Router>
             <Route path="*" component={UnderConstruction} />
-          </Router>
+      </Router>
         )}
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 };
 
 export default App;

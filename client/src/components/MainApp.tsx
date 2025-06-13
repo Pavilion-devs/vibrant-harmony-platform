@@ -8,7 +8,7 @@ import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
 import VaraFoods from "../pages/industries/VaraFoods";
-import VaraElectronics from "../pages/industries/VaraElectronics";
+import LabSupplies from "../pages/industries/LabSupplies";
 import VaraRealEstate from "../pages/industries/VaraRealEstate";
 import VaraOilGas from "../pages/industries/VaraOilGas";
 import NotFound from "../pages/NotFound";
@@ -28,7 +28,7 @@ const MainApp = ({ onLogout }: MainAppProps) => {
           <Route path="/about" component={AboutUs} />
           <Route path="/industries" component={Industries} />
           <Route path="/industries/foods" component={VaraFoods} />
-          <Route path="/industries/electronics" component={VaraElectronics} />
+          <Route path="/industries/lab-supplies" component={LabSupplies} />
           <Route path="/industries/real-estate" component={VaraRealEstate} />
           <Route path="/industries/oil-gas" component={VaraOilGas} />
           <Route path="/products" component={ProductsServices} />

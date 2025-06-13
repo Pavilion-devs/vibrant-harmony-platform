@@ -55,27 +55,27 @@ const Industries = () => {
               </div>
             </div>
 
-            {/* Vara Electronics */}
+            {/* Lab Supplies */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&q=80&w=800" 
-                    alt="Vara Electronics" 
+                    src="https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?auto=format&fit=crop&q=80&w=800" 
+                    alt="Lab Supplies" 
                     className="w-full h-auto"
                   />
                 </div>
               </div>
               <div>
-                <h2 className="heading-underline text-3xl font-semibold mb-6 text-vara-primary">Vara Electronics</h2>
+                <h2 className="heading-underline text-3xl font-semibold mb-6 text-vara-primary">Lab Supplies</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  Vara Electronics develops innovative smart appliances and household gadgets designed to enhance comfort, efficiency, and connectivity in modern homes.
+                  Our Laboratory Design, Supply & Installation division provides comprehensive laboratory solutions specifically tailored for food safety testing, nutritional analysis, and quality assurance in the food and drink industries.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
-                  Our product range includes energy-efficient refrigerators, smart home systems, and other devices that combine cutting-edge technology with user-friendly design.
+                  From state-of-the-art equipment to complete laboratory design and installation, we ensure your facility meets international standards for food analysis, microbiological testing, and nutritional evaluation.
                 </p>
                 <Link 
-                  href="/industries/electronics" 
+                  href="/industries/lab-supplies" 
                   className="vara-btn-primary inline-flex items-center"
                 >
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
