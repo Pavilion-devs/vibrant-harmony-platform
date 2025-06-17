@@ -299,10 +299,10 @@ const LabSupplies = () => {
             </p>
             <div className="space-y-4 mb-8">
               <p className="text-lg">
-                <strong>Email:</strong> foodlab.solutions@varaglobaltrading.com
+                <strong>Email:</strong> sales@varaglobaltrading.com
               </p>
               <p className="text-lg">
-                <strong>Phone:</strong> +234 (0) 1 
+                <strong>Phone:</strong> +234 916 000 2934
               </p>
               <p className="text-lg">
                 <strong>Location:</strong> Lagos, Nigeria

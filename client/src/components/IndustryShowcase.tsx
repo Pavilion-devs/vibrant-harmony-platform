@@ -15,22 +15,22 @@ const industries: Industry[] = [
   {
     id: 1,
     name: "Vara Foods",
-    image: "https://images.unsplash.com/photo-1563865436874-9aef32095fad?auto=format&fit=crop&q=80&w=600",
+    image: "/staple.png",
     description: "Premium staple foods including rice, tomato paste, and a variety of spices that enrich meals across Africa.",
     link: "/industries/foods",
   },
   {
     id: 2,
-    name: "Vara Electronics",
+    name: "Vara Lab Supplies",
     image: "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&q=80&w=600",
-    description: "Innovative smart appliances and gadgets designed to enhance comfort and efficiency in modern homes.",
+    description: "Comprehensive laboratory solutions specifically tailored for food safety testing, nutritional analysis, and quality assurance in the food and drink industries.",
     link: "/industries/electronics",
   },
   {
     id: 3,
-    name: "Vara Trading",
+    name: "Vara Real Estate",
     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=600",
-    description: "Premier commodities trading company specializing in the procurement and distribution of petroleum products.",
+    description: "Comprehensive residential portfolio featuring luxury apartments, family houses, and gated communities across Nigeria's most desirable neighbourhoods.",
     link: "/industries",
   },
 ];

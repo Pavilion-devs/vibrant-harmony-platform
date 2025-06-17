@@ -90,30 +90,30 @@ const products: Product[] = [
   },
   
   // Electronics Products
-  {
-    id: 10,
-    name: "Smart Home System",
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "electronics",
-    description: "Integrated home automation for modern living.",
-    certifications: ["Energy Star", "CE Certified"]
-  },
-  {
-    id: 11,
-    name: "Energy Efficient Refrigerator",
-    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600",
-    category: "electronics",
-    description: "Cutting-edge cooling technology with minimal energy consumption.",
-    certifications: ["Energy Star", "ISO 9001"]
-  },
-  {
-    id: 12,
-    name: "Air Purification System",
-    image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=600",
-    category: "electronics",
-    description: "Advanced air purifier for healthier indoor environments.",
-    certifications: ["HEPA Certified", "CE Certified"]
-  },
+  // {
+  //   id: 10,
+  //   name: "Smart Home System",
+  //   image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   category: "electronics",
+  //   description: "Integrated home automation for modern living.",
+  //   certifications: ["Energy Star", "CE Certified"]
+  // },
+  // {
+  //   id: 11,
+  //   name: "Energy Efficient Refrigerator",
+  //   image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600",
+  //   category: "electronics",
+  //   description: "Cutting-edge cooling technology with minimal energy consumption.",
+  //   certifications: ["Energy Star", "ISO 9001"]
+  // },
+  // {
+  //   id: 12,
+  //   name: "Air Purification System",
+  //   image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&q=80&w=600",
+  //   category: "electronics",
+  //   description: "Advanced air purifier for healthier indoor environments.",
+  //   certifications: ["HEPA Certified", "CE Certified"]
+  // },
   
   // Trading Products (Petroleum)
   {
@@ -216,7 +216,7 @@ const ProductsServices = () => {
               >
                 Food
               </button>
-              <button 
+              {/* <button 
                 className={cn(
                   "px-4 py-2 rounded-lg transition-all duration-300",
                   activeFilter === "electronics" 
@@ -226,7 +226,7 @@ const ProductsServices = () => {
                 onClick={() => setActiveFilter("electronics")}
               >
                 Electronics
-              </button>
+              </button> */}
               <button 
                 className={cn(
                   "px-4 py-2 rounded-lg transition-all duration-300",

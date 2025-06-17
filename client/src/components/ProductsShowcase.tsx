@@ -107,7 +107,7 @@ const ProductsShowcase = () => {
             >
               Foods
             </button>
-            <button 
+            {/* <button 
               className={cn(
                 "px-6 py-3 rounded-full transition-all duration-300 font-medium text-sm sm:text-base",
                 activeFilter === "electronics" 
@@ -117,7 +117,7 @@ const ProductsShowcase = () => {
               onClick={() => setActiveFilter("electronics")}
             >
               Electronics
-            </button>
+            </button> */}
             <button 
               className={cn(
                 "px-6 py-3 rounded-full transition-all duration-300 font-medium text-sm sm:text-base",

@@ -18,7 +18,7 @@ const slides: Slide[] = [
     id: 1,
     image: "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?auto=format&fit=crop&q=80&w=1920",
     title: "Empowering Lives Through Quality",
-    subtitle: "Leading trading company delivering excellence across Foods, Electronics, and Real Estate throughout Africa",
+    subtitle: "Leading trading company delivering excellence across Foods, Lab Supplies, and Real Estate throughout Africa",
     highlight: "Quality & Innovation",
     // stats: [
     //   { label: "Countries Served", value: "15+", icon: Globe },

@@ -62,7 +62,7 @@ const VaraFoods = () => {
       <PageHeader
         title="Vara Foods"
         subtitle="Nourishing homes with high-quality food products"
-        image="https://images.unsplash.com/photo-1534483509719-3feaee7c30da?auto=format&fit=crop&q=80&w=1920"
+        image="/hero.png"
       />
 
       <section className="py-20 md:px-12">

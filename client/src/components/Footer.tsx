@@ -17,7 +17,7 @@ const Footer = () => {
               Empowering lives through quality and innovation across Foods, Electronics, and Real Estate throughout Africa.
             </p>
             <div className="flex space-x-4 pt-2">
-              <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
+              <a href="https://www.facebook.com/share/19U2HSfXHD/?mibextid=wwXIfr" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
                 <Facebook className="h-5 w-5 text-white group-hover:text-white" />
               </a>
               <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
                 <Linkedin className="h-5 w-5 text-white group-hover:text-white" />
               </a>
-              <a href="#" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
+              <a href="https://www.instagram.com/vara_global?igsh=MWNtZDRoMmFuMWlxeA==" className="group bg-white/10 hover:bg-vara-secondary p-3 rounded-full transition-all duration-300 hover:scale-110">
                 <Instagram className="h-5 w-5 text-white group-hover:text-white" />
               </a>
             </div>
