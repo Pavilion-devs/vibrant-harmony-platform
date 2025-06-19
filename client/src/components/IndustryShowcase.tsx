@@ -22,14 +22,14 @@ const industries: Industry[] = [
   {
     id: 2,
     name: "Vara Lab Supplies",
-    image: "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&q=80&w=600",
+    image: "/lab.png",
     description: "Comprehensive laboratory solutions specifically tailored for food safety testing, nutritional analysis, and quality assurance in the food and drink industries.",
-    link: "/industries/electronics",
+    link: "/industries/lab-supplies",
   },
   {
     id: 3,
     name: "Vara Real Estate",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=600",
+    image: "/estate.png",
     description: "Comprehensive residential portfolio featuring luxury apartments, family houses, and gated communities across Nigeria's most desirable neighbourhoods.",
     link: "/industries",
   },

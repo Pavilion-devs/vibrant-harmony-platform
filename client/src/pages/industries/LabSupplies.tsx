@@ -30,7 +30,7 @@ const LabSupplies = () => {
       <PageHeader
         title="Laboratory Design, Supply & Installation Services"
         subtitle="Complete laboratory solutions for food & drink analysis"
-        image="https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?auto=format&fit=crop&q=80&w=1920"
+        image="/labsupplies.png"
       />
 
       {/* Services Overview */}

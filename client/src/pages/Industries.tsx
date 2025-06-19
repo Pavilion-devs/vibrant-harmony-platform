@@ -32,7 +32,7 @@ const Industries = () => {
               <div className="order-2 lg:order-1">
                 <h2 className="heading-underline text-3xl font-semibold mb-6 text-vara-primary">Vara Foods</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  Established in 2005, Vara Foods is dedicated to providing high-quality staple foods that form the foundation of nutritious meals in homes across Africa.
+                  Vara Foods is dedicated to providing high-quality staple foods that form the foundation of nutritious meals in homes across Africa.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
                   Our commitment to quality begins with careful sourcing of raw materials, continues through our state-of-the-art processing facilities, and extends to our rigorous quality control measures.
@@ -47,7 +47,7 @@ const Industries = () => {
               <div className="order-1 lg:order-2">
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1563865436874-9aef32095fad?auto=format&fit=crop&q=80&w=800" 
+                    src="/staple.png" 
                     alt="Vara Foods" 
                     className="w-full h-auto"
                   />
@@ -60,9 +60,9 @@ const Industries = () => {
               <div>
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?auto=format&fit=crop&q=80&w=800" 
+                    src="/labsupplies.png" 
                     alt="Lab Supplies" 
-                    className="w-full h-auto"
+                    className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg relative z-10"
                   />
                 </div>
               </div>
@@ -103,9 +103,9 @@ const Industries = () => {
               <div className="order-1 lg:order-2">
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=800" 
+                    src="/oilandgas.jpg" 
                     alt="Vara Oil & Gas" 
-                    className="w-full h-auto"
+                    className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg relative z-10"
                   />
                 </div>
               </div>

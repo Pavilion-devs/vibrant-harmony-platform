@@ -17,7 +17,7 @@ const products: Product[] = [
   {
     id: 1,
     name: "Premium Basmati Rice",
-    image: "/spice.png",
+    image: "/rice.jpeg",
     description: "Our signature long-grain basmati rice is sourced from the finest rice fields and processed to maintain optimal nutrition and flavor.",
     features: [
       "Long grain variety",
@@ -41,7 +41,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Spice Collection",
-    image: "/garlic.png",
+    image: "/varaspice.jpeg",
     description: "Our premium spice collection features locally sourced herbs and spices that add authentic flavor to any dish.",
     features: [
       "Freshly ground",
@@ -73,7 +73,7 @@ const VaraFoods = () => {
                 About Vara Foods
               </h2>
               <p className="text-lg text-left text-gray-700 mb-6">
-                Established in 2005, Vara Foods is dedicated to providing high-quality staple foods that form the foundation of nutritious meals in homes across Africa.
+                Vara Foods is dedicated to providing high-quality staple foods that form the foundation of nutritious meals in homes across Africa.
               </p>
               <p className="text-lg text-left text-gray-700 mb-6">
                 Our commitment to quality begins with careful sourcing of raw materials, continues through our state-of-the-art processing facilities, and extends to our rigorous quality control measures.
@@ -87,9 +87,9 @@ const VaraFoods = () => {
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-vara-secondary rounded-xl opacity-20 animate-pulse-slow"></div>
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-vara-primary rounded-xl opacity-20 animate-pulse-slow"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1506617564039-2f3b650b7010?auto=format&fit=crop&q=80&w=700"
+                  src="/varaspice.jpeg"
                   alt="Vara Foods Production"
-                  className="w-full h-auto rounded-xl shadow-lg relative z-10"
+                  className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg relative z-10"
                 />
               </div>
             </div>

@@ -14,8 +14,8 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "Cinnamon Spice",
-    image: "/spice.png",
+    name: "Premium Rice",
+    image: "/rice.jpeg",
     category: "food",
     description: "High-quality long grain rice, perfect for any meal.",
     link: "/products#rice",
@@ -38,11 +38,11 @@ const products: Product[] = [
   },
   {
     id: 4,
-    name: "Energy Efficient Refrigerator",
-    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&q=80&w=600",
-    category: "electronics",
-    description: "Cutting-edge cooling technology with minimal energy consumption.",
-    link: "/products#refrigerator",
+    name: "Premium Spring Water",
+    image: "/water.jpeg",
+    category: "food",
+    description: "Premium spring water for daily consumption.",
+    link: "/products#water",
   },
   {
     id: 5,

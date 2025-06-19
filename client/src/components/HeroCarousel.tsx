@@ -28,7 +28,7 @@ const slides: Slide[] = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1519638399535-1b036603ac77?auto=format&fit=crop&q=80&w=1920",
+    image: "/varaspice.jpeg",
     title: "Premium Food Products",
     subtitle: "Sourcing and distributing the finest rice, spices, and food essentials to nourish communities across Africa",
     highlight: "Vara Foods",
@@ -40,10 +40,10 @@ const slides: Slide[] = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&q=80&w=1920",
-    title: "Smart Electronics",
-    subtitle: "Cutting-edge appliances and technology solutions designed for modern African homes and businesses",
-    highlight: "Vara Electronics",
+    image: "/labsupplies.png",
+    title: "Vara Lab Supplies",
+    subtitle: "Comprehensive laboratory solutions specifically tailored for food safety testing, nutritional analysis, and quality assurance in the food and drink industries.",
+    highlight: "Vara Lab Supplies",
     // stats: [
     //   { label: "Tech Products", value: "200+", icon: Globe },
     //   { label: "Homes Connected", value: "25K+", icon: Users },

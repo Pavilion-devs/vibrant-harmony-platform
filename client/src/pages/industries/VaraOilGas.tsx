@@ -85,7 +85,7 @@ const VaraOilGas = () => {
       <PageHeader
         title="Vara Oil & Gas"
         subtitle="Premier petroleum products trading and distribution"
-        image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=1920"
+        image="/oilandgas.jpg"
       />
 
       <section className="py-20 md:px-12">

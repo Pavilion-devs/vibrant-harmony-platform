@@ -18,14 +18,30 @@ const products: Product[] = [
   // Food Products
   {
     id: 1,
+    name: "Premium Spring Water",
+    image: "/water.jpeg",
+    category: "food",
+    description: "High-quality spring water, perfect for any meal.",
+    certifications: ["ISO 22000", "HACCP Certified"]
+  },
+  {
+    id: 2,
     name: "Vegetable Oil",
     image: "/oil.png",
+    category: "food",
+    description: "High-quality vegetable oil, perfect for any meal.",
+    certifications: ["ISO 22000", "HACCP Certified"]
+  },
+  {
+    id: 3,
+    name: "Premium Rice",
+    image: "/rice.jpeg",
     category: "food",
     description: "High-quality long grain rice, perfect for any meal.",
     certifications: ["ISO 22000", "HACCP Certified"]
   },
   {
-    id: 2,
+    id: 4,
     name: "Organic Tomato Paste",
     image: "/paste.png",
     category: "food",
@@ -33,7 +49,7 @@ const products: Product[] = [
     certifications: ["Organic Certified", "Non-GMO"]
   },
   {
-    id: 3,
+    id: 5,
     name: "Seasoning Powder",
     image: "/powder.png",
     category: "food",
@@ -41,7 +57,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "Premium Quality"]
   },
   {
-    id: 4,
+    id: 6,
     name: "Chilli Powder",
     image: "/chilli.png",
     category: "food",
@@ -49,7 +65,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "Premium Quality"]
   },
   {
-    id: 5,
+    id: 7,
     name: "Yellow Chicken Broth Pond",
     image: "/broth.png",
     category: "food",
@@ -57,7 +73,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "Premium Quality"]
   },
   {
-    id: 6,
+    id: 8,
     name: "Ground Cinnamon Spice",
     image: "/spice.png",
     category: "food",
@@ -65,7 +81,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "HACCP Certified"]
   },
   {
-    id: 7,
+    id: 9,
     name: "Bay Leaf Pound",
     image: "/leaf.png",
     category: "food",
@@ -73,7 +89,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "HACCP Certified"]
   },
   {
-    id: 8,
+    id: 10,
     name: "Garlic Powder",
     image: "/garlic.png",
     category: "food",
@@ -81,7 +97,7 @@ const products: Product[] = [
     certifications: ["ISO 22000", "HACCP Certified"]
   },
   {
-    id: 9,
+    id: 11,
     name: "Black Pepper",
     image: "/pepper.png",
     category: "food",
@@ -117,7 +133,7 @@ const products: Product[] = [
   
   // Trading Products (Petroleum)
   {
-    id: 13,
+    id: 12,
     name: "PMS (Petrol Motor Spirit)",
     image: "/pms.png",
     category: "trading",
@@ -125,7 +141,7 @@ const products: Product[] = [
     certifications: ["International Standards", "Quality Assured"]
   },
   {
-    id: 14,
+    id: 13,
     name: "AGO (Automotive Gas Oil)",
     image: "/engine.png",
     category: "trading",
@@ -133,7 +149,7 @@ const products: Product[] = [
     certifications: ["Industry Standards", "Quality Control"]
   },
   {
-    id: 15,
+    id: 14,
     name: "Jet A-1",
     image: "/aviation.png",
     category: "trading",
@@ -141,7 +157,7 @@ const products: Product[] = [
     certifications: ["Aviation Grade", "International Standards"]
   },
   {
-    id: 16,
+    id: 15,
     name: "DPK (Dual Purpose Kerosene)",
     image: "/kerosene.png",
     category: "trading",
@@ -149,7 +165,7 @@ const products: Product[] = [
     certifications: ["Multi-Purpose", "Quality Certified"]
   },
   {
-    id: 17,
+    id: 16,
     name: "LPG (Liquefied Petroleum Gas)",
     image: "/gas.png",
     category: "trading",
@@ -176,7 +192,7 @@ const ProductsServices = () => {
       <PageHeader
         title="Products & Services"
         subtitle="Premium quality products across Foods, Electronics, and Real Estate throughout Africa"
-        image="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1600"
+        image="/varaspice.jpeg"
       />
 
       <section className="py-20 px-4 md:px-12">
