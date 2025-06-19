@@ -82,15 +82,16 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/industries/oil-gas" className="text-white/80 hover:text-white flex items-center transition-colors">
+                  <ChevronRight className="h-4 w-4 mr-1" /> Vara Oil and Gas
+                </Link>
+              </li>
+              <li>
                 <Link href="/products" className="text-white/80 hover:text-white flex items-center transition-colors">
                   <ChevronRight className="h-4 w-4 mr-1" /> Products & Services
                 </Link>
               </li>
-              <li>
-                <Link href="/about" className="text-white/80 hover:text-white flex items-center transition-colors">
-                  <ChevronRight className="h-4 w-4 mr-1" /> Investor Relations
-                </Link>
-              </li>
+
             </ul>
           </div>
 
