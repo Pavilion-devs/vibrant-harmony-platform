@@ -301,14 +301,14 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white p-8 rounded-xl shadow-sm mb-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-2xl font-semibold text-vara-primary mb-4">Vara Global Trading Ltd</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-gray-700">Specialization:</h4>
+                      <h4 className="font-semibold text-gray-700">Specialisation:</h4>
                       <p className="text-gray-600">Petroleum Products & Global Commodities Trading</p>
                     </div>
                     <div>
@@ -324,30 +324,48 @@ const AboutUs = () => {
 
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <MapPin className="h-5 w-5 text-vara-primary mr-3 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-gray-700 mb-1">Headquarters</h4>
-                      <p className="text-gray-600">Lagos, Nigeria</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
                     <Mail className="h-5 w-5 text-vara-primary mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-700 mb-1">Email</h4>
-                      <a href="mailto:info@varaglobaltrading.com" className="text-gray-600 hover:text-vara-primary transition-colors">
+                      <a href="mailto:sales@varaglobaltrading.com" className="text-gray-600 hover:text-vara-primary transition-colors">
                         sales@varaglobaltrading.com
                       </a>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
 
-                  <div className="flex items-start">
-                    <Phone className="h-5 w-5 text-vara-primary mr-3 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-gray-700 mb-1">Phone</h4>
-                      <p className="text-gray-600">+234 7032-378-235</p>
-                    </div>
-                  </div>
+            {/* Head Offices */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+                <MapPin className="h-8 w-8 text-vara-primary mx-auto mb-4" />
+                <h4 className="font-semibold text-gray-700 mb-2">Lagos Office</h4>
+                <p className="text-gray-600 mb-2">Nigeria</p>
+                <div className="flex items-center justify-center">
+                  <Phone className="h-4 w-4 text-vara-primary mr-2" />
+                  <p className="text-gray-600">+234 7032-378-235</p>
+                </div>
+                
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+                <MapPin className="h-8 w-8 text-vara-primary mx-auto mb-4" />
+                <h4 className="font-semibold text-gray-700 mb-2">Abuja Office</h4>
+                <p className="text-gray-600 mb-2">Nigeria</p>
+                <div className="flex items-center justify-center">
+                  <Phone className="h-4 w-4 text-vara-primary mr-2" />
+                  <p className="text-gray-600">+234 7032-378-235</p>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm text-center">
+                <MapPin className="h-8 w-8 text-vara-primary mx-auto mb-4" />
+                <h4 className="font-semibold text-gray-700 mb-2">Panama City Office</h4>
+                <p className="text-gray-600 mb-2">Panama</p>
+                <div className="flex items-center justify-center">
+                  <Phone className="h-4 w-4 text-vara-primary mr-2" />
+                  <p className="text-gray-600">+507 6331-6313</p>
                 </div>
               </div>
             </div>

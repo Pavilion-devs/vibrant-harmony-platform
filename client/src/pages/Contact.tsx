@@ -131,24 +131,52 @@ const Contact = () => {
               
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-lg font-semibold mb-3 text-vara-primary">Headquarters</h3>
+                  <h3 className="text-lg font-semibold mb-3 text-vara-primary">Lagos Head Office</h3>
                   <div className="flex">
                     <MapPin className="h-5 w-5 text-vara-secondary mr-3 flex-shrink-0 mt-1" />
-                    <p className="text-gray-600">
-                    10A Ajanaku Street, off Salvation Road, Awuse Estate, Opebi, Lagos, Nigeria
-                    </p>
+                    <div>
+                      <p className="text-gray-600 mb-2">
+                        10A Ajanaku Street, off Salvation Road, Awuse Estate, Opebi, Lagos, Nigeria
+                      </p>
+                      <p className="text-gray-600 flex items-center">
+                        <Phone className="h-4 w-4 mr-2" />
+                        +234 7032-378-235
+                      </p>
+                    </div>
                   </div>
                 </div>
                 
-                {/* <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <h3 className="text-lg font-semibold mb-3 text-vara-primary">Abuja Office</h3>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-lg font-semibold mb-3 text-vara-primary">Abuja Head Office</h3>
                   <div className="flex">
                     <MapPin className="h-5 w-5 text-vara-secondary mr-3 flex-shrink-0 mt-1" />
-                    <p className="text-gray-600">
-                      Vara Global Trading Abuja, 45 Central Business District, Abuja, Nigeria
-                    </p>
+                    <div>
+                      <p className="text-gray-600 mb-2">
+                        Federal Capital Territory, Abuja, Nigeria
+                      </p>
+                      <p className="text-gray-600 flex items-center">
+                        <Phone className="h-4 w-4 mr-2" />
+                        +234 7032-378-235
+                      </p>
+                    </div>
                   </div>
-                </div> */}
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h3 className="text-lg font-semibold mb-3 text-vara-primary">Panama City Office</h3>
+                  <div className="flex">
+                    <MapPin className="h-5 w-5 text-vara-secondary mr-3 flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="text-gray-600 mb-2">
+                        Panama City, Panama
+                      </p>
+                      <p className="text-gray-600 flex items-center">
+                        <Phone className="h-4 w-4 mr-2" />
+                        +507 6331-6313
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                   <h3 className="text-lg font-semibold mb-3 text-vara-primary">Vara Foods Processing Center</h3>

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
-import { Check, ArrowRight, Building, Home, Handshake, MapPin, Phone, Mail, Users } from "lucide-react";
+import { Check, ArrowRight, Building, Home, Handshake, MapPin, Phone, Mail, Users, Globe } from "lucide-react";
 import { Link } from "wouter";
 
 interface Service {
@@ -291,11 +291,11 @@ const VaraRealEstate = () => {
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Our Head Offices</h2>
             <p className="section-subtitle mx-auto">
-              Strategically located to serve clients across Nigeria.
+              Strategically located to serve clients across Nigeria and internationally.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm text-center">
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600" 
@@ -319,6 +319,19 @@ const VaraRealEstate = () => {
               <h3 className="text-xl font-semibold mb-4 text-vara-primary">Abuja Head Office</h3>
               <p className="text-gray-600">
                 Strategically positioned in the Federal Capital Territory, our Abuja office handles properties and joint ventures throughout the northern regions with direct access to government and institutional clients.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1512353087810-25dfcd641a2c?auto=format&fit=crop&q=80&w=600" 
+                alt="Panama City Office" 
+                className="w-full h-48 object-cover rounded-lg mb-6"
+              />
+              <Globe className="h-8 w-8 text-vara-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-4 text-vara-primary">Panama City Office</h3>
+              <p className="text-gray-600">
+                Our international office in Panama City serves as our regional hub for Central and South American markets, facilitating cross-border transactions and international partnerships.
               </p>
             </div>
           </div>
