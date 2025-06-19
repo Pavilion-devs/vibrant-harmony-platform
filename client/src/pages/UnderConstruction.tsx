@@ -72,10 +72,10 @@ const UnderConstruction = () => {
               📧 sales@varatrading.com
             </a>
             <a 
-              href="tel:+2349160002934" 
+              href="tel:+2349157364488" 
               className="hover:underline"
             >
-              📞 +234 (0) 916 000 2934
+              📞 +234 (0) 915 736 4488
             </a>
           </div>
         </div>

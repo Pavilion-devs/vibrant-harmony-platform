@@ -45,7 +45,8 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">
                 Speak directly with our customer service team during business hours.
               </p>
-              <a href="tel:+2341234567890" className="text-vara-primary font-medium hover:underline">+234 (0) 916  000 2934</a>
+              <a href="tel:+2347032378235" className="text-vara-primary font-medium hover:underline">+234 (0) 7032  378 235</a>
+              
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm text-center">
@@ -56,7 +57,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">
                 Get instant assistance through our WhatsApp business account.
               </p>
-              <a href="https://wa.me/2341234567890" className="text-vara-primary font-medium hover:underline">+234 (0) 916 000 2934</a>
+              <a href="wa:+2349157364488" className="text-vara-primary font-medium hover:underline">+234 (0) 915 736 4488</a>
             </div>
           </div>
 

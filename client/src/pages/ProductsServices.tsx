@@ -364,7 +364,7 @@ const ProductsServices = () => {
                     type="tel"
                     id="phone"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-vara-primary focus:border-transparent"
-                    placeholder="+234 123 456 7890"
+                    placeholder="+234 (0) 915 736 4488"
                   />
                 </div>
               </div>
