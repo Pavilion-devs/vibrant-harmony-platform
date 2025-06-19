@@ -49,7 +49,7 @@ const Industries = () => {
                   <img 
                     src="/staple.png" 
                     alt="Vara Foods" 
-                    className="w-full h-auto"
+                     className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg relative z-10"
                   />
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Industries = () => {
               <div>
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <img 
-                    src="/labsupplies.png" 
+                    src="/mylab.png" 
                     alt="Lab Supplies" 
                     className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg relative z-10"
                   />
@@ -118,7 +118,7 @@ const Industries = () => {
                   <img 
                     src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" 
                     alt="Vara Real Estate" 
-                    className="w-full h-auto"
+                     className="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg relative z-10"
                   />
                 </div>
               </div>

@@ -302,7 +302,7 @@ const LabSupplies = () => {
                 <strong>Email:</strong> sales@varaglobaltrading.com
               </p>
               <p className="text-lg">
-                <strong>Phone:</strong> +234 916 000 2934
+                <strong>Phone:</strong> +234 915 736 4488
               </p>
               <p className="text-lg">
                 <strong>Location:</strong> Lagos, Nigeria
